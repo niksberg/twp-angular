@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+    background-color: #091242;
+    width: 100vw; 
+    height: 160px;
+    display: flex; 
+    align-items: center; 
+    gap: 3px; 
+    padding-left: 40px;
+    padding-right: 40px; 
+    padding-top: auto; 
+    padding-bottom: auto;
+    box-sizing: border-box; 
+    justify-self: center; 
+}
+
+#marginDiv {
+    margin-left:auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100vw; 
+    display: flex;
+    align-items: center; 
+    gap: 90px;
+    padding: auto;
+    box-sizing: border-box;
+    justify-content: center; 
+}
+
+#adimg {
+    flex: 1; 
+    width: 100%; 
+    height: auto; 
+    display: block;
+    padding: 30px;
+}
+
+
+#adrs1-container {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+#adrs1 {
+    width: 50px; 
+    height: auto; 
+}
+
+#adrs1-text {
+    font-size: 14px; 
+    color: #FFFFFF; 
+    margin: 0; 
+}
+
+#adrs2-container {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; /* Add some space between the image and the text */
+}
+
+#adrs2 {
+    width: 50px; /* Adjust the size of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#adrs2-text {
+    font-size: 14px; /* Adjust font size as needed */
+    color: #FFFFFF; /* Ensure text color matches the design */
+    margin: 0; /* Remove default margin */
+}
+
+#adrs3-container {
+    display: flex; /* Use Flexbox to align items horizontally */
+    align-items: center; /* Vertically align the image and text */
+    gap: 10px; /* Add some space between the image and the text */
+    margin-left: 5px;
+}
+
+#adrs3 {
+    width: 50px; /* Adjust the size of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#adrs3-text {
+    font-size: 14px; /* Adjust font size as needed */
+    color: #FFFFFF; /* Ensure text color matches the design */
+    margin: 0; /* Remove default margin */
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+#logo{
+    width: 150px;
+}
+#banner-section{
+    position: relative;
+    height: 100vh; /* Full viewport height */
+}
+nav {
+    position: absolute; /* Position the nav over the ship image */
+    top: 160px; /* Align to the top of the ship image */
+    left: 0; /* Align to the left side */
+    right: 0; /* Align to the right side */
+    align-items: center;
+    justify-content: center;
+    height: 78px; /* Ensure nav has a fixed height */
+    background-color: rgba(0, 0, 0, 0.3); /* Black background with 40% opacity */
+    padding: 10px; /* Add padding around the navigation */
+    margin-left: auto;
+    display: flex; /* Use Flexbox for alignment */
+}
+
+nav ul {
+    display: flex; /* Use Flexbox to align list items horizontally */
+    justify-content: center; /* Center the navigation items */
+    align-items: center; /* Vertically align the items */
+    gap: 20px; /* Add space between the list items */
+    list-style: none; /* Remove default bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline-block; /* Ensure the list items are displayed inline */
+    margin: 0; /* Remove default margin */
+    padding: 0 15px; /* Add horizontal padding for spacing */
+    border-right: 2px solid #FFFFFF; /* Add a 2px white border to the right */
+}
+
+nav ul li:nth-child(3),
+nav ul li:nth-child(4) {
+    border-right: none; /* Remove the border from the 3rd and 4th items */
+}
+
+nav ul li:last-child {
+    border-right: none; /* Remove the border from the last item */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #FFFFFF; /* Set text color */
+    font-size: 16px; /* Adjust font size */
+    padding: 5px 10px; /* Add padding for better clickability */
+    transition: color 0.3s ease; /* Add a smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: #FFB82B; /* Change color on hover */
+}
+
+#ship1{
+    background-image: "images/backGround.svg";
+    z-index: -1;
+    position: relative;
+    top: 0px;
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+
+.social{
+    padding-left: 70px;
+    padding-right: 70px;
+    gap: 30px;
+    
+}
+
+.sec2{
+    background-color: white;
+    width: 100vw;
+    height: 2000px;
+}
+
+.demo {
+    display: inline-block; 
+    background-color: #FFFFFF !important;
+    color: #091242 !important; 
+    padding: 10px auto; /* Add padding for a block-like appearance */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 16px; /* Adjust font size */
+}
+
+.demo:hover {
+    background-color: #FFB82B; /* Change background color on hover */
+    color: #FFFFFF; /* Change text color on hover */
+}
+
+.demo-button {
+    display: inline-block; /* Make the link behave like a block element */
+    background-color: #FFFFFF; /* Set the background color to white */
+    color: #455195; /* Set the text color */
+    padding: 0 20px; /* Add horizontal padding */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 16px; /* Adjust font size */
+    height: 100%; /* Fill the height of the nav div */
+    line-height: 78px; /* Vertically center the text inside the button */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add hover transition */
+}
+
+.demo-button:hover {
+    background-color: #FFB82B; /* Change background color on hover */
+    color: #FFFFFF; /* Change text color on hover */
+}
+
+.banner {
+    position: absolute; /* Position the banner over the ship image */   
+     /* Align to the bottom of the nav */
+    top: 31%;
+    left: 17%;
+    color: #FFFFFF; /* Set text color to white */
+    text-align: left;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.t1 {
+    font-size: 14px; /* Small text size for t1 */
+    margin-right: 150px;
+    margin-bottom: 10px; /* Add spacing below */
+    border-width: 0px 0px 0px 5px;
+    border-color: #FFB82B; 
+    border-style: solid; /* Add a solid border to the left */
+    padding-left: 5px; /* Add padding to the left of the text */  
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.t7{
+    font-size: 14px; /* Small text size for t1 */
+    margin-right: 150px;
+    margin-bottom: 10px; /* Add spacing below */
+    border-width: 0px 0px 0px 5px;
+    border-color: #FFB82B; 
+    border-style: solid; /* Add a solid border to the left */
+    padding-left: 5px; /* Add padding to the left of the text */
+}
+
+.banner .t2 {
+    font-size: 60px; /* Large text size for t2 */
+    font-weight: 700; /* Make it bold for emphasis */
+    margin-bottom: 10px; /* Add spacing below */
+}
+
+.banner .t3 {
+    font-family: krub;
+    font-size: 16px; /* Medium text size for t3 */
+    line-height: 152%; /* Adjust line height for readability */
+    letter-spacing: 0%;
+}
+
+.exploreButton
+{
+    margin-top: 15px;
+}
+
+#service-section
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 100vw;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-section {
+    display: flex; /* Align servicecontent and container-grid side by side */
+    height: 500px;
+    gap: 3px; /* Add space between the two sections */
+    padding: 40px 300px; /* Add padding around the section */
+    background-color: #F9F9F9; /* Light background color */
+}
+
+.servicecontent {
+    flex: 1; 
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: flex-start; /* Align text to the left */
+}
+
+.servicecontent .text .t4 {
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    color: #091242; /* Dark blue color */
+    margin-bottom: 10px; /* Add spacing below */
+}
+
+.container-grid {
+    flex: 2; /* Allow container-grid to take up more space */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Create a 2x2 grid */
+    gap: 20px; /* Add space between grid items */
+}
+
+.service {
+    display: flex; /* Align service-icon and data horizontally */
+    gap: 15px; /* Add space between the icon and text */
+    align-items: center; /* Vertically align items */
+    background-color: #FFFFFF; /* White background for each service */
+    padding: 20px; /* Add padding inside each service box */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.service-icon img {
+    width: 50px; /* Adjust icon size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.data .t5 {
+    font-size: 18px; /* Adjust heading size */
+    font-weight: bold; /* Make text bold */
+    color: #091242; /* Dark blue color */
+    margin-bottom: 5px; /* Add spacing below */
+}
+
+.data .t6 {
+    font-size: 14px; /* Adjust paragraph size */
+    color: #555555; /* Dark gray color */
+    line-height: 1.5; /* Improve readability */
+}
+
+.about-section
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 100vw;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-section {
+    padding: 60px 20px; /* Add padding around the section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF; /* White background */
+}
+
+.about-container {
+    display: flex;
+    gap: 40px; /* Space between text and images */
+    max-width: 1200px; /* Limit the width of the section */
+    width: 100%;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.why-us .highlight {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFB82B; /* Highlight color */
+    margin-bottom: 10px;
+    display: inline-block;
+    padding-left: 5px;
+    border-left: 4px solid #FFB82B; 
+}
+
+.about-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #091242; /* Dark blue */
+    margin-bottom: 20px;
+}
+
+.about-text .description {
+    font-size: 16px;
+    color: #555555; /* Dark gray */
+    line-height: 1.5; /* Improve readability */
+    margin-bottom: 20px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    gap: 20px; /* Space between features */
+    margin-top: 20px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature img {
+    width: 40px;
+    height: 40px;
+}
+
+.feature p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #091242; /* Dark blue */
+}
+
+.about-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-images .main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.about-images .secondary-image {
+    width: 80%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners */
+    margin-left: auto; /* Align to the right */
+}
+
+@media (max-width: 768px) 
+{
+    
+    .banner{
+        width: 25%;
+        }
+}
