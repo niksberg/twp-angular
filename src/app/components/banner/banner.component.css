@@ -32,12 +32,11 @@
     margin-top: 10px;
 
 }
-
 @media screen and (max-width: 1024px) and (min-width: 768px)
 {
     .banner {
         position: absolute;
-        top: 399px;
+        top: 400px;
         left: 180px;
     }
 }
