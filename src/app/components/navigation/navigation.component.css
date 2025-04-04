@@ -1,0 +1,55 @@
+.nav {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(4, 28, 55, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    font-family: krub;
+}
+
+.nav-page, .social {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-page li a, .social li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Specific hover effect for Home, About, and Service links */
+.nav-page li:nth-child(-n+3) a {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-page li:nth-child(-n+3) a:hover {
+    border-bottom: 2px solid #ffffff;
+    transition: border-bottom 0.3s ease;
+}
+
+.demo-button {
+    padding: 30px 20px;
+    background-color: #ffffff;
+    color: #041c37 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+}
