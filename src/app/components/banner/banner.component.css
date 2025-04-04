@@ -1,0 +1,76 @@
+.banner{
+    position: absolute;
+    top: 390px; 
+    left: 360px;
+    gap: 3px;
+}
+
+.text-highlight{
+    color: #ffffff;
+    background-color: rgba(4, 28, 55, 0.7);
+    display: inline-block;
+    padding: 2px 10px 2px 5px;
+    border-left: 3px solid #ffc107;
+    font-size: 1rem;
+    font-family: rubik;
+}
+
+.hero-text{
+    color: #ffffff;
+    font-size: 4rem;
+    font-family: rubik;
+    font-weight: 600;
+}
+
+.caption-text{
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: krub;
+}
+
+.explore-button{
+    margin-top: 10px;
+
+}
+@media screen and (max-width: 1024px) and (min-width: 768px)
+{
+    .banner {
+        position: absolute;
+        top: 400px;
+        left: 180px;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    .banner {
+        position: absolute;
+        top: 205.5px;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px)
+{
+    .text-highlight{
+        color: #ffffff;
+        background-color: rgba(4, 28, 55, 0.7);
+        display: inline-block;
+        padding: 2px 10px 2px 5px;
+        border-left: 3px solid #ffc107;
+        font-size: 1rem;
+        font-family: rubik;
+    }
+    
+    .hero-text{
+        color: #ffffff;
+        font-size: 4rem;
+        font-family: rubik;
+        font-weight: 600;
+    }
+    
+    .caption-text{
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-family: krub;
+    }
+} 
