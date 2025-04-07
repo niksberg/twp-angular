@@ -5,9 +5,17 @@
     transform: translateX(-50%);
     max-width: 1200px;
     width: 100%;
+    height: 80vh;
     padding: 0 20px;
 }
 
+#hero-image{
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    
+}
 .text-highlight {
     color: #ffffff;
     background-color: rgba(4, 28, 55, 0.7);

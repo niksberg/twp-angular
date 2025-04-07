@@ -31,7 +31,6 @@ nav {
     color: #ffffff;
 }
 
-/* Specific hover effect for Home, About, and Service links */
 .nav-page li:nth-child(-n+3) a {
     position: relative;
     padding-bottom: 5px;
@@ -52,4 +51,4 @@ nav {
     .nav {
         display: none;
     }
-}
+} 
