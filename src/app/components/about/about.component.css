@@ -1,0 +1,9 @@
+#about-section{
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+}
+.about-section{
+    position: absolute;
+    top: 100px;
+}
