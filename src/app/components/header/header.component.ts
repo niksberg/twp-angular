@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { NavigationComponent } from '../navigation/navigation.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [NavigationComponent],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'  // Make sure this is .css
+  styleUrl: './header.component.css'
 })
 export class HeaderComponent {
   isMenuOpen = false;

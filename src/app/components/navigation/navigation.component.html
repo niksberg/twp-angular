@@ -1,18 +1,25 @@
 <div class="nav">
     <nav>
-        <ul class="nav-page">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-        </ul>
-        <ul class="social">
-            <li><a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a> </li>
-            <li><a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
-            <li class="demo-button">
-                <a href=" " class="demo-button">Request Demo</a>
-            </li>
-        </ul>
+        <button class="hamburger" [class.active]="isMenuOpen" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-content" [class.active]="isMenuOpen">
+            <ul class="nav-page">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+            <ul class="social">
+                <li><a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="demo-button">
+                    <a href=" " class="demo-button">Request Demo</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 </div>

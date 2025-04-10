@@ -5,11 +5,13 @@ import { BannerComponent } from './components/banner/banner.component';
 import { ServicesComponent } from './components/services/services.component';
 import { AboutComponent } from './components/about/about.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { MoreworkComponent } from "./components/morework/morework.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, NavigationComponent,BannerComponent, ServicesComponent, AboutComponent],
+  imports: [RouterOutlet, HeaderComponent, NavigationComponent, BannerComponent, ServicesComponent, AboutComponent, FooterComponent, MoreworkComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

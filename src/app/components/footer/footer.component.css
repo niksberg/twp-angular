@@ -1,0 +1,153 @@
+.footer {
+    background-color: #091242;
+    color: #ffffff;
+    padding: 60px 0 30px;
+    font-family: krub;
+    margin-top: 500px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.company-info {
+    max-width: 300px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+    max-width: 200px;
+}
+
+.company-description {
+    color: #666C89;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #FFB629;
+}
+
+.footer-heading {
+    font-family: rubik;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #666C89;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFB629;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.subscribe-input {
+    padding: 12px;
+    border: 1px solid #1F2A69;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: krub;
+}
+
+.subscribe-input::placeholder {
+    color: #666C89;
+}
+
+.subscribe-button {
+    padding: 12px 24px;
+    background: linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
+    border: none;
+    color: #23212A;
+    font-family: krub;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.subscribe-button:hover {
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 20px;
+    border-top: 1px solid #1F2A69;
+    text-align: center;
+}
+
+.copyright {
+    color: #666C89;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1023px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .company-info {
+        max-width: 100%;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .subscribe-form {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}

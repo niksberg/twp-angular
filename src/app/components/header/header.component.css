@@ -1,111 +1,112 @@
 header {
-    background-color: #091242;
-    width: 100%;
-    min-width: auto;
-    max-width: 100%;
-    height: 110px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 70px 20px;
+  background-color: #091242;
+  width: 100%;
+  min-width: auto;
+  max-width: 100%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 20px;
 }
 
 .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    font-family: krub;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  font-family: krub;
+  z-index: 2000;
 }
 
 .header-logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #header-info {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 #timeinfo-container,
 #mailinfo-container,
 #callinfo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 #time-text,
 #mail-text,
 #call-text {
-    color: white;
+  color: white;
 }
 
 #time-text p,
 #mail-text p,
 #call-text p {
-    margin: 0;
-    line-height: 1.4;
+  margin: 0;
+  line-height: 1.4;
 }
 
 .hamburger-menu {
-  display: none;
-  width: 30px;
-  height: 21px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  margin-left: 20px;
+display: none;
+width: 30px;
+height: 21px;
+background: none;
+border: none;
+cursor: pointer;
+padding: 0;
+margin-left: 20px;
 }
 
 .hamburger-menu span {
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: gold;
-  margin: 3px 0;
-  transition: all 0.3s ease;
+display: block;
+width: 100%;
+height: 3px;
+background-color: gold;
+margin: 3px 0;
+transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 768px) {
-  .hamburger-menu {
-    display: block;
-  }
+.hamburger-menu {
+  display: block;
+}
 
-  .header-container {
-    padding: 15px;
-  }
+.header-container {
+  padding: 15px;
+}
 
-  .header-logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
 
-  #header-info {
-    display: none;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background-color: #091242;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    z-index: 1;
-  }
+#header-info {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: #091242;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1;
+}
 
-  #header-info.mobile-menu-active {
-    display: block;
-  }
+#header-info.mobile-menu-active {
+  display: block;
+}
 
-  #timeinfo-container,
-  #mailinfo-container,
-  #callinfo-container {
-    margin: 10px 0;
-  }
+#timeinfo-container,
+#mailinfo-container,
+#callinfo-container {
+  margin: 10px 0;
+}
 }

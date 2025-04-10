@@ -9,13 +9,13 @@
     padding: 0 20px;
 }
 
-#hero-image{
+/* #hero-image{
     position: static;
     top: 0;
     left: 0;
     width: 100vw;
-    
-}
+} */
+ 
 .text-highlight {
     color: #ffffff;
     background-color: rgba(4, 28, 55, 0.7);
@@ -49,6 +49,8 @@
     .banner {
         padding: 0 40px;
     }
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -56,4 +58,5 @@
         padding: 0 20px;
         top: 320px;
     }
+ 
 }
