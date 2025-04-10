@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     padding: 70px 20px;
-    margin: 190px auto;
+    margin: 150px auto;
 }
 
 .morework-container {
@@ -65,7 +65,7 @@
 }
 
 
-:root {
+:host {
     --primary-color: #091242;
     --white-color: #ffffff;
     --gradient-yellow: linear-gradient(to right, #FFB629, #FFDA56, #FFD7A6);
@@ -78,7 +78,25 @@
     width: 100%;
     height: 100%;
     z-index: -2;
-    background-color: linear-gradient(to bottom, white 50%, var(--gradient-yellow) 50%);
+    
+}
+.top-bg{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: -2;
+    background: white;
+}
+.bottom-bg{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: -2;
+    background: linear-gradient(to right, #FFB629, #FFDA56, #FFD7A6);
 }
 
 @media screen and (max-width: 1023px) {

@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --primary-color: #091242;
+  --white-color: #ffffff;
+  --gradient-yellow: linear-gradient(to right, #FFB629, #FFDA56, #FFD7A6);
+}
 
 
 
