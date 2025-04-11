@@ -48,14 +48,22 @@
     display: flex;
     flex-direction: row;
 }
-.testimonial-card{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.testimonial-box {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
-.testimonial-container{
-    padding: 40px;;
+
+.testimonial-card {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 200%;
+}
+
+.testimonial-container {
+    padding: 40px;
+    width: 50%;
+    flex-shrink: 0;
 }
 
 #card1{
@@ -117,4 +125,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.rating-star{
+  padding-top: 10px;
 }
