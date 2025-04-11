@@ -1,0 +1,121 @@
+#testimonial {
+    position: relative;
+    width: 100%;
+    min-width: auto;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    margin: 10px auto;
+} 
+.testimonial{
+    width: 100%;
+    min-width: auto;
+    justify-content: space-between;
+    display: inline inline-block;
+    max-width: 1200px;
+    padding: 10px 10px;
+}
+.text-highlight{
+    background-color: rgba(232, 232, 232, 0.5);
+    border-left: 3px solid #ffc107;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: rubik;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.text-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: rubik;
+    margin-bottom: 10px;
+}
+
+.testimonial-bar{
+    width: 100%;
+    min-width: auto;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+}
+.arrow{
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+.testimonial-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-container{
+    padding: 40px;;
+}
+
+#card1{
+    background-color: #F4F4F4;
+}
+
+#card1 .testimonial-msg{
+    color: #666C89;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: krub;
+    font-style: italic;
+}
+
+#card2{
+    background-color: #091242;
+}
+
+#card2 .testimonial-msg{
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: krub;
+    font-style: italic;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+#card1 .testimonial-name{
+    color: #091242;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: rubik;
+}
+#card2 .testimonial-name{
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: rubik;
+}
+#card1 .testimonial-company{
+  color: #091242;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: krub;
+}
+#card2 .testimonial-company{
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: krub; 
+}
+.profile-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
