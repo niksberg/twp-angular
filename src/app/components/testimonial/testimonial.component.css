@@ -57,13 +57,14 @@
 .testimonial-card {
     display: flex;
     transition: transform 0.5s ease;
-    width: 200%;
+    width: 300%;
 }
 
 .testimonial-container {
     padding: 40px;
-    width: 50%;
+    width: 33.333%;
     flex-shrink: 0;
+    box-sizing: border-box;
 }
 
 #card1{
@@ -129,4 +130,10 @@
 
 .rating-star{
   padding-top: 10px;
+}
+#myimg {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
 }
