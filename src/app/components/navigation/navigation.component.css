@@ -42,12 +42,15 @@ nav {
 
 .nav-page li:nth-child(-n+3) a {
     position: relative;
-    padding-bottom: 5px;
+    padding: 30px 0;
+    display: inline-block;
+    width: 100%;
 }
 
 .nav-page li:nth-child(-n+3) a:hover {
     border-bottom: 2px solid #ffffff;
-    transition: border-bottom 0.3s ease;
+    width: 100%;
+    transition: all 0.3s ease;
 }
 
 .demo-button {
