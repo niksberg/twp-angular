@@ -59,6 +59,10 @@
     transition: all 0.3s ease;
 }
 
+.btn:hover {
+    transform: scale(1.05);
+}
+
 .btn-primary {
     background-color: #091242;
     color: #ffffff;

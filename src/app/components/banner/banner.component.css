@@ -43,7 +43,13 @@
 
 .explore-button {
     margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
+
+/* .explore-button:hover {
+    transform: scale(1.05);
+} */
 
 @media screen and (max-width: 1023px) and (min-width: 769px) {
     .banner {
