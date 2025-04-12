@@ -38,6 +38,7 @@ nav {
 .nav-page li a, .social li a {
     text-decoration: none;
     color: #ffffff;
+    justify-content: center;
 }
 
 .nav-page li:nth-child(-n+3) a {
@@ -45,6 +46,23 @@ nav {
     padding: 30px 0;
     display: inline-block;
     width: 100%;
+}
+
+.nav-page li:nth-child(1) a,
+.nav-page li:nth-child(2) a {
+    position: relative;
+    padding-right: 15px;
+}
+
+.nav-page li:nth-child(1) a::after,
+.nav-page li:nth-child(2) a::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 35%;
+    height: 30%;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .nav-page li:nth-child(-n+3) a:hover {
@@ -58,6 +76,12 @@ nav {
     background-color: #ffffff;
     color: #041c37 !important;
 }
+
+.demo-button {
+    font-weight: bold;
+}
+
+
 
 .hamburger {
     display: none;
