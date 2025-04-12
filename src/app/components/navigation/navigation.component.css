@@ -41,6 +41,7 @@ nav {
     justify-content: center;
 }
 
+
 .nav-page li a{
     padding-left: 15px;
 }
@@ -79,24 +80,36 @@ nav {
 .nav-page li:nth-child(-n+3) a:hover {
     border-bottom: 2px solid #ffffff;
     width: 100%;
-    transition: all 0.3s ease;
+    transition: all 10s ease;
 }
 
-.demo-button {
-    padding: 30px 20px;
+
+/* .demo-button{
+    padding: 0px 0px;
     background-color: #ffffff;
     color: #041c37 !important;
     transition: background-color 0.3s ease;
-}
-
-.demo-button:hover {
-    background-color: #FFB629;
-}
+} */
 
 .demo-button {
     font-weight: bold;
 }
-
+#demo-button{
+    padding: 30px 40px;
+    margin: 0;
+    background-color: #ffffff;
+    color: #041c37 !important;
+    transition: background-color 0.3s ease;
+}
+/* .demo-button:hover {
+    background-color: #041c37;
+    color: #ffffff!important;
+} */
+    #demo-button:hover{
+    background-color: gold;
+    color: #041c37 !important;
+    transition: background-color 0.3s ease;
+    }
 
 
 .hamburger {
@@ -151,6 +164,7 @@ nav {
         transition: left 0.3s ease;
     }
 
+
     .nav-page li:nth-child(1) a::after,
 .nav-page li:nth-child(2) a::after {
     content: none;
@@ -176,7 +190,7 @@ nav {
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 40px;
-        gap: 20px;
+        gap: 40px;
         justify-content: center;
     }
 
@@ -186,8 +200,12 @@ nav {
 
     .social li:last-child {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 80px;
         text-align: center;
         display: block;
+    }
+
+    .social li:not(:last-child) {
+        margin-bottom: 15px;
     }
 }
