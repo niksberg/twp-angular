@@ -100,6 +100,8 @@
     height: auto;
 }
 
+
+
 .about-counter {
     display: inline-flex;
     justify-content: center;
@@ -116,8 +118,17 @@
     padding-top: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
+    padding-left: 50px;
 }
-
+@media screen and (max-width: 768px)  {
+    .counter{
+        border-right: none;
+        border-bottom: #D4D4D4 1px solid;
+    }
+    .counter:last-child {
+        border-bottom: none;
+    }
+}
 .counter:last-child {
     border-right: none;
     padding-left: 50px;
@@ -135,6 +146,7 @@
     width: 17px;
     height: 17px;
     margin: 10px 15px;
+    padding: 10px;
 }
 .counter-description {
     font-family: krub;
