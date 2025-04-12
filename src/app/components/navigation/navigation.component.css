@@ -41,6 +41,13 @@ nav {
     justify-content: center;
 }
 
+.social-icon {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .nav-page li:nth-child(-n+3) a {
     position: relative;
     padding: 30px 0;
@@ -135,6 +142,17 @@ nav {
         transition: left 0.3s ease;
     }
 
+    .nav-page li:nth-child(1) a::after,
+.nav-page li:nth-child(2) a::after {
+    content: none;
+    position: none;
+    right: none;
+    top: none;
+    height: none;
+    width: none;
+    background-color: none;
+}
+    
     .nav-content.active {
         left: 0;
     }
