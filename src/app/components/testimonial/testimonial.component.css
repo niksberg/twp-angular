@@ -57,7 +57,13 @@
 .testimonial-card {
     display: flex;
     transition: transform 0.5s ease;
-    width: 300%;
+    width: 150%;
+}
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        width: 300%;
+    }
 }
 
 .testimonial-container {
