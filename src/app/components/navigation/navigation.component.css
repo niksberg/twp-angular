@@ -51,6 +51,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
 }
 
 .nav-page li:nth-child(-n+3) a {
