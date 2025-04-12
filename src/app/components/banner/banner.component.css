@@ -43,14 +43,19 @@
 
 .explore-button {
     margin-top: 20px;
+    cursor: pointer;
+    transition: transform 3s ease;
+}
+
+#explore-button:hover {
+    transform: scale(0.95);
+    transition-duration: 3s ease;
 }
 
 @media screen and (max-width: 1023px) and (min-width: 769px) {
     .banner {
         padding: 0 40px;
     }
-
-
 }
 
 @media screen and (max-width: 768px) {
@@ -58,5 +63,4 @@
         padding: 0 20px;
         top: 320px;
     }
- 
 }

@@ -51,6 +51,7 @@
     background-color: rgba(232, 232, 232, 0.5);
     border-left: 3px solid #ffc107;
     padding-left: 5px;
+    padding-right: 5px;
     font-family: rubik;
     margin-bottom: 10px;
     display: inline-block;
@@ -92,12 +93,22 @@
     flex: 1;
     display: flex;
     justify-content: center;
+    opacity: 0.5;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-in;
+}
+
+.about-hero-image.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .about-hero-image img {
     max-width: 100%;
     height: auto;
 }
+
+
 
 .about-counter {
     display: inline-flex;
@@ -115,8 +126,17 @@
     padding-top: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
+    padding-left: 50px;
 }
-
+@media screen and (max-width: 768px)  {
+    .counter{
+        border-right: none;
+        border-bottom: #D4D4D4 1px solid;
+    }
+    .counter:last-child {
+        border-bottom: none;
+    }
+}
 .counter:last-child {
     border-right: none;
     padding-left: 50px;
@@ -134,6 +154,7 @@
     width: 17px;
     height: 17px;
     margin: 10px 15px;
+    padding: 10px;
 }
 .counter-description {
     font-family: krub;

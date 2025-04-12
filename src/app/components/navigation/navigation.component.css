@@ -38,23 +38,85 @@ nav {
 .nav-page li a, .social li a {
     text-decoration: none;
     color: #ffffff;
+    justify-content: center;
+}
+
+
+.nav-page li a{
+    padding-left: 15px;
+}
+
+.social-icon {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
 }
 
 .nav-page li:nth-child(-n+3) a {
     position: relative;
-    padding-bottom: 5px;
+    padding: 30px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.nav-page li:nth-child(1) a,
+.nav-page li:nth-child(2) a {
+    position: relative;
+    padding-right: 15px;
+}
+
+.nav-page li:nth-child(1) a::after,
+.nav-page li:nth-child(2) a::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 35%;
+    height: 30%;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .nav-page li:nth-child(-n+3) a:hover {
     border-bottom: 2px solid #ffffff;
-    transition: border-bottom 0.3s ease;
+    width: 100%;
+    transition: all 10s ease;
 }
 
-.demo-button {
-    padding: 30px 20px;
+
+/* .demo-button{
+    padding: 0px 0px;
     background-color: #ffffff;
     color: #041c37 !important;
+    transition: background-color 0.3s ease;
+} */
+
+.demo-button {
+    font-weight: bold;
 }
+#demo-button{
+    padding: 30px 40px;
+    margin: 0;
+    background-color: #ffffff;
+    color: #041c37 !important;
+    transition: background-color 0.3s ease;
+}
+/* .demo-button:hover {
+    background-color: #041c37;
+    color: #ffffff!important;
+} */
+    #demo-button:hover{
+    background-color: gold;
+    color: #041c37 !important;
+    transition: background-color 0.3s ease;
+    }
+
 
 .hamburger {
     display: none;
@@ -108,17 +170,48 @@ nav {
         transition: left 0.3s ease;
     }
 
+
+    .nav-page li:nth-child(1) a::after,
+.nav-page li:nth-child(2) a::after {
+    content: none;
+    position: none;
+    right: none;
+    top: none;
+    height: none;
+    width: none;
+    background-color: none;
+}
+    
     .nav-content.active {
         left: 0;
     }
 
-    .nav-page, .social {
+    .nav-page {
         flex-direction: column;
         align-items: center;
         margin: 20px 0;
     }
 
     .social {
+        flex-direction: row;
+        flex-wrap: wrap;
         margin-top: 40px;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .social li:not(:last-child) {
+        display: inline-flex;
+    }
+
+    .social li:last-child {
+        width: 100%;
+        margin-top: 80px;
+        text-align: center;
+        display: block;
+    }
+
+    .social li:not(:last-child) {
+        margin-bottom: 15px;
     }
 }

@@ -4,10 +4,10 @@
     <div class="testimonial-bar">
         <p class="text-title">What Our Customer Say</p>
         <div class="arrow">
-            <div>
+            <div id="arrowLeft" (click)="slideTestimonials('left')">
                 <img src="images/arrowLeft.svg" alt="Left Arrow">
             </div>
-            <div>
+            <div id="arrowRight" (click)="slideTestimonials('right')">
                 <img src="images/arrowRight.svg" alt="Right Arrow">
             </div>
         </div>
@@ -30,7 +30,9 @@
                 <p class="testimonial-msg">
                     Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
                 </p>
-                <div class="rating-star"></div>
+                <div class="rating-star">
+                    <img src="images/Star.svg" alt="Star Icon">
+                </div>
             </div>
             <div class="testimonial-container" id="card2">
                 <div class="profile-bar">
@@ -48,7 +50,49 @@
                 <p class="testimonial-msg">
                     Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
                 </p>
-                <div class="rating-star"></div>
+                <div class="rating-star">
+                    <img src="images/Star.svg" alt="Star Icon">
+                </div>
+            </div>
+            <div class="testimonial-container" id="card1">
+                <div class="profile-bar">
+                    <div class="profile">
+                        <img id="myimg" src="images/mi.jpeg" width="200px" alt="Testimonial Image">
+                        <div class="profile-bio">
+                            <p class="testimonial-name">Nikshep</p>
+                            <p class="testimonial-company">The Web People</p>
+                        </div>
+                    </div>
+                    <div class="quoteIcon">
+                        <img src="images/quoteIcon.svg" alt="Quote Icon">
+                    </div>
+                </div>
+                <p class="testimonial-msg">
+                    I made this website with Angular frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+                </p>
+                <div class="rating-star">
+                    <img src="images/Star.svg" alt="Star Icon">
+                </div>
+            </div>
+            <div class="testimonial-container" id="card2">
+                <div class="profile-bar">
+                    <div class="profile">
+                        <img src="images/user2.svg" alt="Testimonial Image">
+                        <div class="profile-bio">
+                            <p class="testimonial-name">John Martin</p>
+                            <p class="testimonial-company">Restoration Company</p>
+                        </div>
+                    </div>
+                    <div class="quoteIcon">
+                        <img src="images/quoteIcon.svg" alt="Quote Icon">
+                    </div>
+                </div>
+                <p class="testimonial-msg">
+                    Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+                </p>
+                <div class="rating-star">
+                    <img src="images/Star.svg" alt="Star Icon">
+                </div>
             </div>
         </div>
     </div>
