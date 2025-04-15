@@ -44,7 +44,7 @@
 .explore-button {
     margin-top: 20px;
     cursor: pointer;
-    transition: transform 3s ease;
+    transition: transform 3s ease-in-out;
 }
 
 #explore-button:hover {
