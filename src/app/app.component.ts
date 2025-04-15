@@ -8,6 +8,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { FooterComponent } from './components/footer/footer.component';
 import { MoreworkComponent } from "./components/morework/morework.component";
 import { TestimonialComponent } from "./components/testimonial/testimonial.component";
+import {WhyChooseComponent} from "./components/why-choose/why-choose.component";
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,8 @@ import { TestimonialComponent } from "./components/testimonial/testimonial.compo
     AboutComponent,
     FooterComponent,
     MoreworkComponent,
-    TestimonialComponent
+    TestimonialComponent,
+    WhyChooseComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

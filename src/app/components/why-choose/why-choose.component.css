@@ -1,0 +1,47 @@
+#whyChoose{
+    position: relative;
+    width: 100%;
+    min-width: auto;
+    max-width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+    margin: 100px auto;
+    background: linear-gradient(to right, #091242 50%, #F4F4F4 50%);
+}
+.whyChoose-div{
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: auto;
+    justify-content: space-between;
+    gap: 50px;
+    display: flex;
+    max-width: 1600px;
+}
+
+.text-highlight {
+    color: #ffffff;
+    background-color: rgba(4, 28, 55, 0.5);
+    display: inline-block;
+    padding: 2px 10px 2px 5px;
+    border-left: 3px solid #ffc107;
+    font-size: 1rem;
+    font-family: rubik;
+}
+
+
+.right-content{
+   position: relative; 
+}
+#whyChoose-image{
+    width: 120%;
+}
+#whyChoose-tag{
+    position: absolute;
+    width: 40% ;
+    top: 310px;
+    left: 170px;
+}
