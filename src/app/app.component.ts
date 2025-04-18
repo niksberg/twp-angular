@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MoreworkComponent } from "./components/morework/morework.component";
 import { TestimonialComponent } from "./components/testimonial/testimonial.component";
 import {WhyChooseComponent} from "./components/why-choose/why-choose.component";
+import { TeamComponent } from "./components/team/team.component";
 
 @Component({
   selector: 'app-root',
@@ -23,8 +24,9 @@ import {WhyChooseComponent} from "./components/why-choose/why-choose.component";
     FooterComponent,
     MoreworkComponent,
     TestimonialComponent,
-    WhyChooseComponent
-  ],
+    WhyChooseComponent,
+    TeamComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
