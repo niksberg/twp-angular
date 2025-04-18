@@ -10,6 +10,7 @@ import { MoreworkComponent } from "./components/morework/morework.component";
 import { TestimonialComponent } from "./components/testimonial/testimonial.component";
 import {WhyChooseComponent} from "./components/why-choose/why-choose.component";
 import { TeamComponent } from "./components/team/team.component";
+import { ContactComponent } from './components/contact/contact.component';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +26,8 @@ import { TeamComponent } from "./components/team/team.component";
     MoreworkComponent,
     TestimonialComponent,
     WhyChooseComponent,
-    TeamComponent
+    TeamComponent,
+    ContactComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

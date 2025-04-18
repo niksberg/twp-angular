@@ -1,0 +1,35 @@
+#header-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#timeinfo-container,
+#mailinfo-container,
+#callinfo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+#time-text,
+#mail-text,
+#call-text {
+  color: white;
+}
+
+#time-text p,
+#mail-text p,
+#call-text p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 768px) {
+  #header-info {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+}
