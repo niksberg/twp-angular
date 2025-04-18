@@ -1,7 +1,125 @@
-#header-info {
-  display: flex;
+#contact{
+  background-color: #091242;
   align-items: center;
-  gap: 30px;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+#contactCover{
+  width: 80%;
+  justify-content: center;
+}
+
+.contact-gallery{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cf-1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.cf-2{
+    display: grid;
+  grid-template-columns: 1fr ,1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.contact-leftSide{
+    justify-content: flex-start;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: white;
+  font-family: 'Krub', sans-serif;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form textarea {
+  grid-column: span 2;
+  height: 150px;
+  resize: none;
+}
+
+.contact-form button {
+  grid-column: span 1;
+  background-color: #FFB629;
+  color: #091242;
+  border: none;
+  padding: 15px 30px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  font-family: 'Krub', sans-serif;
+}
+
+.contact-form button:hover {
+  background-color: #ffc107;
+}
+.contact-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px 0;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.contact-rightSide{
+  justify-content: flex-start;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.text-highlight {
+  background-color: hsla(0, 0%, 91%, 0.1);
+  color: #ffffff;
+  font-family: rubik;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  border-left: 3px solid #ffc107;
+  padding-left: 5px;
+  margin-right: 280px; 
+}
+
+.text-heading {
+  color: #ffffff;
+  font-family: rubik;
+  font-size: 2rem;;
+  font-weight: 600;
+  line-height: 100%;
+  margin: 10px auto;
+}
+
+.text-description {
+  color: #ffffff;
+  font-family: krub;
+  line-height: 152%;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 20px; 
 }
 
 #timeinfo-container,
