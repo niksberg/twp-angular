@@ -45,7 +45,6 @@
     border-top-right-radius: 10px;
 }
 
-
 .team-profiles{
    display: flex;
    flex-direction: row;
@@ -55,6 +54,8 @@
    margin-top: 30px;
    margin-bottom: 0;
 }
+
+
 
 .team-profile-name{
     position: relative;
@@ -111,3 +112,44 @@
     left: 262px;
 }
 
+@media screen and (max-width: 1024px) {
+    .team-profiles {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    
+    .social-icons {
+        top: -130px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .team-profiles {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #si-1 {
+        width: 35%;
+        left: 237px;
+    }
+    #si-2{
+        width: 45%;
+        left: 201px;
+    }
+    #si-3{
+        width: 28%;
+        left: 263px;
+    }
+
+    .text-heading {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #si-1, #si-2, #si-3 {
+        width: 45%;
+        left: 140px;
+    }
+}
