@@ -2,7 +2,7 @@
   background-color: #091242;
   align-items: center;
   justify-content: center;
-  padding: 40px 0;
+  padding: 40px 200px;
 }
 
 #contactCover{
@@ -21,17 +21,19 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
 }
-
+.contact-form{
+  width: 120%;
+}
 .cf-2{
     display: grid;
   grid-template-columns: 1fr ,1fr;
   gap: 20px;
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
 }
@@ -43,10 +45,12 @@
   width: 100%;
   padding: 15px;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid #4E5683;
   border-radius: 4px;
-  color: white;
-  font-family: 'Krub', sans-serif;
+  color: #FFFFFF !important;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: 'League Spartan', sans-serif;
 }
 
 .contact-form input::placeholder,
@@ -62,7 +66,7 @@
 
 .contact-form button {
   grid-column: span 1;
-  background-color: #FFB629;
+  background:linear-gradient(to right,#FFB629,#FFB629,#FFD7A6);
   color: #091242;
   border: none;
   padding: 15px 30px;
@@ -73,16 +77,17 @@
 }
 
 .contact-form button:hover {
-  background-color: #ffc107;
+  background: #ff8707;
 }
 .contact-container{
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 10px;
   padding: 50px 0;
   width: 80%;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .contact-rightSide{
   justify-content: flex-start;
@@ -135,6 +140,16 @@
 #mail-text,
 #call-text {
   color: white;
+  font-family: krub;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 135%;
+}
+
+.button-div{
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'League Spartan', sans-serif;;
 }
 
 #time-text p,
