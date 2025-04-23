@@ -3,16 +3,19 @@
     color: #ffffff;
     padding: 60px 0 30px;
     font-family: krub;
-    margin-top: 500px;
+    margin-top: 0;
 }
-
+.footer-image{
+    display: flex;
+    position: relative;
+}
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 50px;
 }
 
 .company-info {
@@ -25,7 +28,7 @@
 }
 
 .company-description {
-    color: #666C89;
+    color: #ffffff;
     margin-bottom: 30px;
     line-height: 1.6;
 }
@@ -49,11 +52,12 @@
     color: #FFB629;
 }
 
-.footer-heading {
+.footer-heading, .footer-logo {
+    background-color: rgba(255, 255, 255, 0.08);
     font-family: rubik;
     font-size: 1.25rem;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
     color: #ffffff;
 }
 
@@ -116,11 +120,63 @@
     padding: 20px;
     border-top: 1px solid #1F2A69;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.terms
+{
+    color: #8388A7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+.copyright {
+    color: #ffffff;
+    font-size: 0.9rem;
 }
 
-.copyright {
-    color: #666C89;
-    font-size: 0.9rem;
+#mailinfo-container,
+#callinfo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+#mail-text p,
+#call-text p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+#mail-text,
+#call-text {
+  color: white;
+  font-family: krub;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 135%;
+}
+
+
+.foot-button{
+    display: flex;
+    flex-direction: row;
+}
+
+.social-link{
+    padding: 0 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.foot-button{
+    justify-content: space-between;
+    align-items: center;
+    gap: 1px;
 }
 
 @media screen and (max-width: 1023px) {
