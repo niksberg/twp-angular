@@ -11,6 +11,7 @@ import { TestimonialComponent } from "./components/testimonial/testimonial.compo
 import {WhyChooseComponent} from "./components/why-choose/why-choose.component";
 import { TeamComponent } from "./components/team/team.component";
 import { ContactComponent } from './components/contact/contact.component';
+import { BlogComponent } from "./components/blog/blog.component";
 
 @Component({
   selector: 'app-root',
@@ -27,7 +28,8 @@ import { ContactComponent } from './components/contact/contact.component';
     TestimonialComponent,
     WhyChooseComponent,
     TeamComponent,
-    ContactComponent
+    ContactComponent,
+    BlogComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
