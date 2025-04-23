@@ -28,7 +28,7 @@
 #whyChoose-image{
     position:absolute;
     /* left: 153px; */
-    max-width: 60%;
+    max-width: 50%;
     min-width: auto;
     top: 12%;
     left: 5%;
@@ -112,7 +112,7 @@
     #whyChoose-image {
         position: relative;
         max-width: 45%;
-        left: 0;
+        left: 10px;
         top: 0;
         margin-bottom: 0;
     }
