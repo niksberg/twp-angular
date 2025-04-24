@@ -135,5 +135,40 @@
 
 .blog-image:hover{
     cursor: pointer;
+
+}
+
+.blog-button
+{
+    margin-top: 30px;
+}
+
+.blog-button button{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 25px;
+    width: 194px;
+    height: 60px;
+    top: 1271px;
+    left: 377px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 1, 72);
+    color: white;
+    font-family: Krub;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0%;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.blog-button button:hover{
+    background-color: rgba(31, 42, 105, 1);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05)
     
 }
