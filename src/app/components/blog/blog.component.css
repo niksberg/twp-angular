@@ -80,6 +80,52 @@
      
 }
 
+.readmore {
+    position: absolute;
+    display: none;
+    left: 470px;
+    background-color: rgba(31, 42, 105, 0.5);
+    color: white;
+    font-family: Krub;
+    font-weight: 600;
+    padding: 120px 140px;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: auto;
+}
+
+.blog-image:hover +
+.readmore:hover {
+    opacity: 1;
+    position: absolute;
+    display: inline;
+    left: 470px;
+    background-color: rgba(31, 42, 105, 0.5);
+    color: white;
+    font-family: Krub;
+    font-weight: 600;
+    padding: 120px 140px;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: auto;
+    display: inline;
+    pointer-events: auto;
+}
+
+#rm1{
+    top: 265px;
+}
+#rm2{
+    top: 640px; 
+}
+#rm3{
+    top: 1015px; 
+}
+
 .blog-content{
     padding: 15px 25px;
     display: flex;
