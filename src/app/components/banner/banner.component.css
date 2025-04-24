@@ -44,12 +44,11 @@
 .explore-button {
     margin-top: 20px;
     cursor: pointer;
-    transition: transform 3s ease-in-out;
+    transition: all 3s ease;
 }
 
 #explore-button:hover {
-    transform: scale(0.95);
-    transition-duration: 3s ease;
+    transform: scale(1.05)
 }
 
 @media screen and (max-width: 1023px) and (min-width: 769px) {
