@@ -84,9 +84,9 @@ nav {
 }
 
 .nav-page li:nth-child(-n+3) a:hover {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
     width: 100%;
-    transition: all 10s ease;
+    transition: all 0.3s ease;
 }
 
 

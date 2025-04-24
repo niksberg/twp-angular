@@ -1,0 +1,139 @@
+#blog{
+    position: relative;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.blog-div{
+    justify-content: center;
+    align-items: space-between;
+    margin: 5px auto;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.text{
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.text-highlight{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    justify-content: center;
+    background-color:rgba(232, 232, 232, 0.5);
+    padding: 2px 5px;
+    border-left: 4px solid gold;
+}
+.text-heading{
+    font-family: Rubik;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.blog-container
+{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.blog-card{
+    max-width: 1200px;
+    max-height: 308px;
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    border-top: 1px solid rgba(214, 214, 214, 1);
+}
+.blog-image{
+    width: 453px;
+    height: 308.00006103515625px;
+     
+}
+
+.blog-content{
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid rgba(214, 214, 214, 1);
+
+}
+.blog-title
+{
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.blog-description{
+    max-width: 335px;
+    font-family: Krub;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 152%;
+    letter-spacing: 0%;
+    color: rgba(102, 108, 137, 1);
+}
+
+.blog-points{
+    padding: 5px 30px;
+}
+
+.blog-point
+{
+    font-family: Krub;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 167%;
+    letter-spacing: 0%;
+}
+
+.blog-content{
+    gap: 15px;
+}
+
+.blog-content:hover{
+   color: rgb(255, 140, 0) !important; 
+   cursor: pointer;
+}
+.blog-content:hover .blog-description
+{
+    color: rgba(255, 140, 0, 1)!important;
+    cursor: pointer;
+}
+
+.blog-image:hover{
+    cursor: pointer;
+    
+}
