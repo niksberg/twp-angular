@@ -54,7 +54,6 @@
 }
 
 .footer-heading, .footer-logo {
-    background-color: rgba(255, 255, 255, 0.08);
     font-family: rubik;
     font-size: 1.25rem;
     font-weight: 500;
@@ -90,7 +89,7 @@
 
 .subscribe-input {
     padding: 12px;
-    border: 1px solid #1F2A69;
+    border: 1px solid rgba(78, 86, 131, 1);
     background-color: transparent;
     color: #ffffff;
     font-family: krub;
@@ -108,11 +107,11 @@
     font-family: krub;
     font-weight: 500;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
 }
 
 .subscribe-button:hover {
-    transform: translateY(-2px);
+    transform: scale(1.05);
 }
 
 .footer-bottom {

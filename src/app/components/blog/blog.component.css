@@ -8,6 +8,7 @@
     align-items: center;
 }
 .blog-div{
+    position: relative;
     justify-content: center;
     align-items: space-between;
     margin: 5px auto;
@@ -55,6 +56,7 @@
 
 .blog-container
 {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -64,6 +66,7 @@
 }
 
 .blog-card{
+    position: relative;
     max-width: 1200px;
     max-height: 308px;
     margin-top: 30px;
@@ -75,14 +78,18 @@
     border-top: 1px solid rgba(214, 214, 214, 1);
 }
 .blog-image{
-    width: 453px;
-    height: 308.00006103515625px;
+    position: relative;
+    max-width: 453px;
+    max-height: 308.00006103515625px;
      
 }
 
-.readmore {
+.blog-image:hover{
+   content: "Read More";
+}
+/* .readmore {
+    display: inline;
     position: absolute;
-    display: none;
     left: 470px;
     background-color: rgba(31, 42, 105, 0.5);
     color: white;
@@ -93,7 +100,7 @@
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.3s ease;
-    pointer-events: auto;
+    pointer-events: none;
 }
 
 .blog-image:hover +
@@ -114,19 +121,19 @@
     pointer-events: auto;
     display: inline;
     pointer-events: auto;
-}
-
-#rm1{
+} 
+#rm1:hover{
     top: 265px;
 }
-#rm2{
+#rm2:hover{
     top: 640px; 
 }
-#rm3{
+#rm3:hover{
     top: 1015px; 
-}
+} */
 
 .blog-content{
+    position: relative;
     padding: 15px 25px;
     display: flex;
     flex-direction: column;
@@ -154,6 +161,7 @@
 
 .blog-points{
     padding: 5px 30px;
+    min-width: 300px;
 }
 
 .blog-point
@@ -181,7 +189,6 @@
 
 .blog-image:hover{
     cursor: pointer;
-
 }
 
 .blog-button
@@ -217,4 +224,75 @@
     cursor: pointer;
     transform: scale(1.05)
     
+}
+@media screen and (max-width: 1024px) {
+    .blog-card {
+        flex-direction: column;
+        max-height: none;
+        align-items: center;
+    }
+    .blog-image {
+        max-width: 100%;
+        height: auto;
+    }
+    .blog-content {
+        border-left: none;
+        padding: 10px 10px;
+        width: 100%;
+        align-items: center;
+    }
+    .blog-description {
+        max-width: 100%;
+    }
+    .blog-points {
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blog-div {
+        padding: 0 10px;
+    }
+    .text-heading {
+        font-size: 28px;
+    }
+    .blog-title {
+        font-size: 22px;
+    }
+    .blog-description {
+        font-size: 14px;
+    }
+    .blog-point {
+        font-size: 14px;
+    }
+    .blog-button button {
+        width: 160px;
+        height: 50px;
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #blog {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .text-heading {
+        font-size: 24px;
+    }
+    .blog-card {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        gap: 15px;
+    }
+    .blog-title {
+        font-size: 20px;
+    }
+    .blog-content {
+        padding: 15px 10px;
+    }
+    .blog-points {
+        padding: 0px 0px;
+    }
 }
