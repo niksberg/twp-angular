@@ -7,8 +7,8 @@
         </button>
         <div class="nav-content" [class.active]="isMenuOpen">
             <ul class="nav-page">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+                <li><a routerLink="/about" routerLinkActive="active">About</a></li>
                 <li><a href="services.html">Services</a></li>
             </ul>
             <ul class="social">
