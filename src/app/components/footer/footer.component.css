@@ -1,7 +1,7 @@
 .footer {
     background-color: #091242;
     color: #ffffff;
-    padding: 60px 0 30px;
+    padding: 40px 30px;
     font-family: krub;
     margin-top: 0;
 }
@@ -12,13 +12,25 @@
 }
 .footer-content {
     max-width: 1200px;
+    justify-items: center;
     margin: 0 auto;
     padding: 0 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
 }
+.footer-section.company-info{
+    width: 319px !important;
+}
 
+.footer-section.pages,
+.footer-section.utility{
+    width: 100px;
+}
+
+.footer-section.contact{
+    min-width: 230px;
+}
 .company-info {
     max-width: 300px;
 }
@@ -36,20 +48,22 @@
 
 .social-links {
     display: flex;
-    gap: 15px;
+    gap: 20px;
+    justify-items: flex-start;
+    align-items: center;
 }
 
 .social-link {
-    width: 24px;
-    height: 24px;
+    margin-right: 9px;
+    width: 10px;
+    height: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     color: #ffffff;
-    transition: color 0.3s;
+    transition: transform 0.3s ease;
 }
 
 .social-link:hover {
+    transform: scale(1.1);
     color: #FFB629;
 }
 
@@ -179,9 +193,31 @@
     gap: 1px;
 }
 
+.g1{
+    width: 312px;
+    height: 100px;
+    top: 8532.5px;
+    left: 0px;
+    position: absolute;
+    background: rgba(225, 255, 255, 0.08);
+
+}
+
+.g2{
+    width: 1181px;
+    height: 100px;
+    top: 8532.5px;
+    left: 700px;
+    position: absolute;
+    background: rgba(225, 255, 255, 0.08);
+}
+
 @media screen and (max-width: 1023px) {
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .g1, .g2{
+        display: none;
     }
 }
 
@@ -190,12 +226,16 @@
         grid-template-columns: 1fr;
     }
 
+    .g1, .g2{
+        display: none;
+    }
+
     .company-info {
         max-width: 100%;
     }
 
     .footer-section {
-        text-align: center;
+        text-align: flex-start;
     }
 
     .social-links {
