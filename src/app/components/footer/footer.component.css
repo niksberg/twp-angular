@@ -216,6 +216,8 @@
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
     }
+    .footer-heading{
+        text-shadow: #FFB629 0px 0px 10px;    }
     .g1, .g2{
         display: none;
     }
@@ -224,6 +226,7 @@
 @media screen and (max-width: 768px) {
     .footer-content {
         grid-template-columns: 1fr;
+        text-align: start;
     }
 
     .g1, .g2{
@@ -235,13 +238,23 @@
     }
 
     .footer-section {
+        margin-bottom: 2px;
         text-align: flex-start;
     }
 
+    .footer-section .footer-heading, .footer-logo {
+        margin-bottom: 15px;
+    }
+    .footer-heading{
+        text-shadow: #FFB629 0px 0px 10px;
+    }
     .social-links {
         justify-content: center;
     }
-
+    .social-link:hover {
+        transform: scale(1.1);
+        color: #FFB629;
+    }
     .subscribe-form {
         max-width: 300px;
         margin: 0 auto;
