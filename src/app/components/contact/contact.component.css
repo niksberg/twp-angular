@@ -79,6 +79,8 @@
 .contact-form button:hover {
   background: #FFD7A6;
   transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(211, 158, 27, 0.5);
 }
 .contact-container{
   display: flex;

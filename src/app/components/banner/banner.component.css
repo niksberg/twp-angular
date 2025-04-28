@@ -48,7 +48,9 @@
 }
 
 #explore-button:hover {
-    transform: scale(1.05)
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(194, 148, 31, 0.5);
 }
 
 @media screen and (max-width: 1023px) and (min-width: 769px) {

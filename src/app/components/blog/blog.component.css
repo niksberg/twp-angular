@@ -77,6 +77,18 @@
     gap: 25px;
     border-top: 1px solid rgba(214, 214, 214, 1);
 }
+
+.blog-card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(209, 180, 17, 0.5);
+    .readmore{
+    opacity: 1;
+    position: absolute;
+    display: inline;
+   }
+}
 .blog-image{
     position: relative;
     max-width: 453px;
@@ -87,8 +99,9 @@
 .blog-image:hover{
    content: "Read More";
 }
-/* .readmore {
-    display: inline;
+
+.readmore {
+    display: none;
     position: absolute;
     left: 470px;
     background-color: rgba(31, 42, 105, 0.5);
@@ -98,7 +111,7 @@
     padding: 120px 140px;
     z-index: 2;
     cursor: pointer;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s ease;
     pointer-events: none;
 }
@@ -222,7 +235,8 @@
     background-color: rgba(31, 42, 105, 1);
     color: white;
     cursor: pointer;
-    transform: scale(1.05)
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px rgba(32, 114, 202, 0.5) ;
     
 }
 @media screen and (max-width: 1024px) {
