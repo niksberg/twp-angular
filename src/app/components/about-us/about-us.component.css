@@ -7,6 +7,20 @@
 
 .aboutBanner-img{
     width: 100%;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideDown 1s ease-out forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .aboutUS-Div{
     justify-items: flex-start;
