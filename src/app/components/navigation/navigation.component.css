@@ -36,6 +36,7 @@ nav {
 }
 
 .nav-page li a, .social li a {
+    width: auto;
     text-decoration: none;
     color: #ffffff;
     justify-content: center;
@@ -43,6 +44,7 @@ nav {
 
 
 .nav-page li a{
+    width: auto;
     padding-left: 15px;
 }
 
@@ -191,6 +193,11 @@ nav {
         flex-direction: column;
         align-items: center;
         margin: 20px 0;
+    }
+
+    .nav-page a {
+        width: auto;
+        justify-content: center;
     }
 
     .social {
