@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../../components/header/header.component';
 import { NavigationComponent } from '../../components/navigation/navigation.component';
 import { AboutBannerComponent } from '../../components/about-banner/about-banner.component';
+import { AboutUSComponent } from '../../components/about-us/about-us.component';
 
 @Component({
   selector: 'app-about-page',
@@ -10,7 +11,8 @@ import { AboutBannerComponent } from '../../components/about-banner/about-banner
     HeaderComponent,
     NavigationComponent,
     AboutBannerComponent,
-  ],
+    AboutUSComponent
+],
   templateUrl: './about-page.component.html',
   styleUrl: './about-page.component.css'
 })
