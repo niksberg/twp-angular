@@ -55,7 +55,11 @@
    margin-bottom: 0;
 }
 
+.team-profile:hover{
+  transform: scale(1.05);
+  transition: transform 0.6s ease;
 
+}
 
 .team-profile-name{
     position: relative;

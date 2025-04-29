@@ -1,0 +1,110 @@
+.aboutUS{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    padding: 90px 60px;
+}
+
+.aboutBanner-img{
+    width: 100%;
+}
+.aboutUS-Div{
+    justify-items: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.text-highlight{
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(28, 31, 53, 1);
+    background-color: rgba(232, 232, 232, 0.5);
+    border-left: 5px solid gold;
+    width: 90px;
+    height: 23px;
+    padding: 3px 9px;
+    display: flex;
+}
+
+.text-heading{
+    font-family: Rubik;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(28, 31, 53, 1);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.text-description{
+    font-family: Krub;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 152%;
+    letter-spacing: 0%;
+    color:rgba(102, 108, 137, 1);
+    width: 604px;
+    height: 48px;
+}
+
+.aboutUS-btn{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.btn{
+    width: 192px;
+    height: 60px;
+    gap: 10px;
+    padding-top: 15px;
+    padding-right: 39px;
+    padding-bottom: 16px;
+    padding-left: 38px;
+    border: 0.2px solid rgba(141, 153, 246, 0.2);
+    background-color: rgba(244, 244, 244, 1);
+    font-family: Krub;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 152%;
+    letter-spacing: 0%;
+}
+.btn:hover{
+    background-color: gold;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(234, 224, 43, 0.5);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.td2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.aboutUS-learnmore{
+    position: relative;
+    margin-top: 60px;
+}
+.aboutUS-learnmore:hover{
+    background-color: navy;
+    color: white;
+    box-shadow: 0px 10px 20px rgba(60, 113, 237, 0.398);
+} 
+
+/* .graphic-c{
+    width: 52px;
+    height: 52px;
+    top: 412px;
+    left: 159px;
+    color: rgba(31, 42, 105, 1);
+} */

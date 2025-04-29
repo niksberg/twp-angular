@@ -36,6 +36,7 @@ nav {
 }
 
 .nav-page li a, .social li a {
+    width: auto;
     text-decoration: none;
     color: #ffffff;
     justify-content: center;
@@ -43,6 +44,7 @@ nav {
 
 
 .nav-page li a{
+    width: auto;
     padding-left: 15px;
 }
 
@@ -83,7 +85,8 @@ nav {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.nav-page li:nth-child(-n+3) a:hover {
+.nav-page li:nth-child(-n+3) a:hover,
+.nav-page li a.active {
     border-bottom: 3px solid #ffffff;
     width: 100%;
     transition: all 0.3s ease;
@@ -172,7 +175,7 @@ nav {
 
 
     .nav-page li:nth-child(1) a::after,
-.nav-page li:nth-child(2) a::after {
+    .nav-page li:nth-child(2) a::after {
     content: none;
     position: none;
     right: none;
@@ -190,6 +193,11 @@ nav {
         flex-direction: column;
         align-items: center;
         margin: 20px 0;
+    }
+
+    .nav-page a {
+        width: auto;
+        justify-content: center;
     }
 
     .social {
@@ -211,7 +219,8 @@ nav {
         display: block;
     }
 
-    .social li:not(:last-child) {
+    .social li:not(:last-child) 
+    {
         margin-bottom: 15px;
     }
 }
