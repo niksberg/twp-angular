@@ -173,7 +173,7 @@ nav {
 
 
     .nav-page li:nth-child(1) a::after,
-.nav-page li:nth-child(2) a::after {
+    .nav-page li:nth-child(2) a::after {
     content: none;
     position: none;
     right: none;
@@ -212,7 +212,8 @@ nav {
         display: block;
     }
 
-    .social li:not(:last-child) {
+    .social li:not(:last-child) 
+    {
         margin-bottom: 15px;
     }
 }
