@@ -33,6 +33,20 @@
     top: 12%;
     left: 5%;
     border-radius: 15px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .whyChoose-banner{
