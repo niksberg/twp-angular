@@ -83,7 +83,7 @@
     background-color: gold;
     cursor: pointer;
     box-shadow: 0px 10px 20px rgba(234, 224, 43, 0.5);
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
 .td2{
@@ -100,7 +100,6 @@
     color: white;
     box-shadow: 0px 10px 20px rgba(60, 113, 237, 0.398);
 } 
-}
 
 /* .graphic-c{
     width: 52px;
