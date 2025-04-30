@@ -13,7 +13,7 @@
 }
 .faq1{
     width: 681px;
-    height: auto;
+    height: 400px;
     gap: 50px;
 }
 .text1{
@@ -87,7 +87,7 @@
     transition: transform 0.3s ease;
 }
 
-.questionText:hover + .answerArrow{
+.questionText:hover .answerArrow{
     transform: rotate(90deg);
     color: gold;
 }
