@@ -2,3 +2,7 @@
   width: 100%;
   overflow-x: hidden;
 }
+.grey{
+  padding: 50px 0;
+  background-color: rgba(244, 244, 244, 1);
+}

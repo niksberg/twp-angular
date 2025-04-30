@@ -1,0 +1,179 @@
+#price{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    padding: 90px 60px;
+    margin: 10px 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+}
+
+.text p{
+    color: rgba(28, 31, 53, 1);
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+.text-highlight{
+    color: rgba(28, 31, 53, 1);
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 80px;
+    height: 23px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 9px 3px 9px;
+    margin: 5px auto;
+    color: white;
+    border-left: 5px solid gold;
+    background-color: rgba(232, 232, 232, 0.5);
+}
+
+.text-heading{
+    font-family: Rubik;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(28, 31, 53, 1);
+    margin-top: 20px;
+    margin-bottom: 65px;
+}
+
+.price-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.price-card{
+    width: 380px;
+    height: 696px;
+    gap: 10px;
+    padding-top: 61px;
+    padding-right: 50px;
+    padding-bottom: 61px;
+    padding-left: 50px;
+    background-color: rgba(244, 244, 244, 1);
+    color: rgba(28, 31, 53, 1);
+    border-radius: 10px;
+}
+
+.price-card-title{
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(28, 31, 53, 1);
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.price-tag{
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.price-card-price{
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 85px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(28, 31, 53, 1);
+}
+
+.price-card-duration{
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(28, 31, 53, 1);     
+}
+
+.price-card-header{
+    margin-bottom: 40px;
+}
+.features{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+}
+
+.feature{
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(28, 31, 53, 1);
+    border-bottom: 1px solid rgba(214, 214, 214, 1);
+}
+
+.TruckNo{
+    padding-top: 20px;
+    border-top: 1px solid rgba(214, 214, 214, 1);
+}
+
+.btn{
+    margin-top: 50px;
+    width: 194px;
+    height: 60px;
+    font-family: Krub;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0%;
+    background:  linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
+    border: none;
+}
+
+.price-card:hover{
+    background: rgba(9, 18, 66, 1);
+    color: white;
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    background: linear-gradient(94.06deg, #FFD7A6 -1.21%, #FFDA56 58.66%, #FFB629 116.84%);
+    color: black;
+}
+
+.price-card:hover .price-card-title,
+.price-card:hover .price-card-price,
+.price-card:hover .price-card-duration,
+.price-card:hover .feature
+{
+    color: white; 
+}

@@ -7,6 +7,20 @@
 
 .aboutBanner-img{
     width: 100%;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideDown 1s ease-out forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .aboutUS-Div{
     justify-items: flex-start;
@@ -108,3 +122,21 @@
     left: 159px;
     color: rgba(31, 42, 105, 1);
 } */
+
+@media screen and (max-width: 768px) {
+    .aboutUS-Div{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .text-description{
+        width: 100%;
+    }
+    .aboutUS-btn{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .text-description{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
