@@ -1,0 +1,191 @@
+#faq,.faq {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    margin-bottom: 100px;
+    width:1200px;
+    height: auto;
+}
+.faq1{
+    width: 681px;
+    height: auto;
+    gap: 50px;
+}
+.text1{
+    width: 308px;
+    height: 120px;
+    gap: 15px;
+}
+
+.text-highlight{
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(28, 31, 53, 1);
+    background: rgba(232, 232, 232, 0.5);
+    border-left: 4px solid gold;
+}
+.hl1{
+    width: 50px;
+    height: auto;
+    padding-top: 4px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+}
+
+.text-heading1{
+    font-family: Rubik;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(28, 31, 53, 1);
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.questions{
+    margin-top: 80px;
+}
+.question{
+    margin-top: 50px;
+}
+.questionAsked{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.questionText{
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(28, 31, 53, 1);
+}
+.question:hover .questionText,
+.question:hover .answerArrow{
+    color: rgb(244, 87, 9);
+    cursor: pointer; 
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+.answerArrow{
+    color:rgba(28, 31, 53, 1);
+    width: 36px;
+    font-weight: 900;
+    font-family: bold;
+    font-size: 1.2rem;
+}
+.answerArrow:hover{
+    color: gold;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.answerText{
+    display: none;
+    font-family: Krub;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 152%;
+    letter-spacing: 0%;
+    color: rgba(102, 108, 137, 1);
+}
+.faq2{
+    z-index: 2;
+    padding: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 448px;
+    height: 368px;
+    gap: 60px;
+    background-color: rgba(9, 18, 66, 1);
+    color: white;
+    gap: 10px;
+    padding-top: 52px;
+    padding-right: 62px;
+    padding-bottom: 52px;
+    padding-left: 62px;
+
+}
+
+.hl2{
+    background: rgba(17, 28, 85, 1) !important;
+    padding-left: 5px;
+    width: 80px;
+    height: auto;
+    color: white;
+}
+.text2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.text-heading2{
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+}
+
+.call{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 230px;
+    height: 63px;
+    gap: 14px;
+}
+.contactText{
+    font-family: Krub;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 135%;
+    letter-spacing: 0%;
+}
+.contactText:hover{
+    color: gold;
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.contactButton{
+    margin-top: 25px;
+    width: 142px;
+    height: 60px;
+    font-family: Krub;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 135%;
+    letter-spacing: 0%;
+    background: linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
+    color: rgba(35, 33, 42, 1);
+    border: none;
+}
+
+.contactButton:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    background: linear-gradient(94.06deg, #FFDA56 -1.21%, #FFD7A6 58.66%, #FFB629 116.84%);
+    box-shadow: 0px 4px 4px rgba(233, 229, 30, 0.5);
+}
+
+.faqBanner{
+    width: 682px;
+    position: absolute;
+    top: -50px;
+    left: 850px;
+}

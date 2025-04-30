@@ -8,6 +8,7 @@ import { TestimonialComponent } from '../../components/testimonial/testimonial.c
 import {AboutWhatwedoComponent} from '../../components/about-whatwedo/about-whatwedo.component';
 import { PriceComponent} from '../../components/price/price.component';
 import { FooterComponent } from "../../components/footer/footer.component";
+import { FaqComponent } from '../../components/faq/faq.component';
 @Component({
   selector: 'app-about-page',
   standalone: true,
@@ -20,7 +21,8 @@ import { FooterComponent } from "../../components/footer/footer.component";
     TestimonialComponent,
     AboutWhatwedoComponent,
     PriceComponent,
-    FooterComponent
+    FooterComponent,
+    FaqComponent
 ],
   templateUrl: './about-page.component.html',
   styleUrl: './about-page.component.css'
