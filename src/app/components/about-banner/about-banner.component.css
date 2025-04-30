@@ -11,7 +11,7 @@
   .about-banner img{
     position: static;
     z-index: -5000;
-    right: auto;
+    right: auto; 
     left: auto;
     min-width: 100%;
     height: auto;

@@ -122,3 +122,21 @@
     left: 159px;
     color: rgba(31, 42, 105, 1);
 } */
+
+@media screen and (max-width: 768px) {
+    .aboutUS-Div{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .text-description{
+        width: 100%;
+    }
+    .aboutUS-btn{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .text-description{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}

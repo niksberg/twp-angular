@@ -5,6 +5,7 @@ import { AboutBannerComponent } from '../../components/about-banner/about-banner
 import { AboutUSComponent } from '../../components/about-us/about-us.component';
 import { TeamComponent } from '../../components/team/team.component';
 import { TestimonialComponent } from '../../components/testimonial/testimonial.component';
+import {AboutWhatwedoComponent} from '../../components/about-whatwedo/about-whatwedo.component';
 @Component({
   selector: 'app-about-page',
   standalone: true,
@@ -14,7 +15,8 @@ import { TestimonialComponent } from '../../components/testimonial/testimonial.c
     AboutBannerComponent,
     AboutUSComponent,
     TeamComponent,
-    TestimonialComponent
+    TestimonialComponent,
+    AboutWhatwedoComponent
 ],
   templateUrl: './about-page.component.html',
   styleUrl: './about-page.component.css'
