@@ -87,12 +87,14 @@
     transition: transform 0.3s ease;
 }
 
-.questionText:hover .answerArrow{
+.questionText:hover + .answerArrow{
     transform: rotate(90deg);
-    color: gold;
+    color: rgb(255, 85, 0);
 }
 .question:hover .answerText {
     display: block;
+    transition: display 0.3s ease;
+
 }
 
 .answerText{
