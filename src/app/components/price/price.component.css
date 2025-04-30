@@ -60,7 +60,12 @@
     align-items: center;
     padding: 10px 20px;
 }
-
+@media screen and (max-width: 1200px) 
+{
+    .price-container{
+        flex-direction: column;
+    }
+}
 .price-card{
     width: 380px;
     height: 696px;
