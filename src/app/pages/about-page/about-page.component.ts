@@ -6,6 +6,7 @@ import { AboutUSComponent } from '../../components/about-us/about-us.component';
 import { TeamComponent } from '../../components/team/team.component';
 import { TestimonialComponent } from '../../components/testimonial/testimonial.component';
 import {AboutWhatwedoComponent} from '../../components/about-whatwedo/about-whatwedo.component';
+import { PriceComponent} from '../../components/price/price.component';
 @Component({
   selector: 'app-about-page',
   standalone: true,
@@ -16,7 +17,8 @@ import {AboutWhatwedoComponent} from '../../components/about-whatwedo/about-what
     AboutUSComponent,
     TeamComponent,
     TestimonialComponent,
-    AboutWhatwedoComponent
+    AboutWhatwedoComponent,
+    PriceComponent
 ],
   templateUrl: './about-page.component.html',
   styleUrl: './about-page.component.css'
