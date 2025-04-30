@@ -40,7 +40,14 @@
     flex-direction: column;
     gap: 10px;
 }
-
+.service-content:hover,
+.service-content:hover p{
+    cursor: pointer;
+    color: rgb(255, 136, 0);
+    transform: scale(1.05);
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
+}
 /* .service-icon {
     border-right: 1px solid #D8D8D8;
     padding-right: 25px;

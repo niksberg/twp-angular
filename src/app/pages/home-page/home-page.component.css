@@ -1,8 +1,15 @@
 .home-page-main {
-  width: 100%;
+  width: 100vw;
   overflow-x: hidden;
 }
-.g1{
+
+.footer-image{
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+/* .g1{
   width: 312px;
   height: 100px;
   top: 8532.5px;
@@ -19,4 +26,4 @@
   left: 700px;
   position: absolute;
   background: rgba(225, 255, 255, 0.08);
-}
+} */

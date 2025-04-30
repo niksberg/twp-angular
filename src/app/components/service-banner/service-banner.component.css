@@ -1,0 +1,73 @@
+.service-banner {
+    position: relative;
+    right: auto;
+    left: auto;
+    max-width: 100%;
+    align-items: center;
+    height: 550px;
+    min-width: 100%;
+  }
+
+  .serviceBanner-img{
+    top: -160px;
+    position: relative;
+    z-index: -5000;
+    right: auto; 
+    left: auto;
+    min-width: 100%;
+    height: auto;
+  }
+  .serviceBanner-text{
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @media screen and (max-width: 768px)  
+  {
+    .serviceBanner-text
+    {
+       left: 50px; 
+    }
+  }
+  @media screen and (max-width: 1500px)
+   {
+    .serviceBanner-text
+    {
+       left: 100px;
+    }
+   }
+  
+  .text-highlight{
+    align-items: center;
+    justify-content: centers;
+    width: 90px;
+    height: 23px;
+    left: 4px;
+    padding-top: 3px;
+    padding-right: 9px;
+    padding-bottom: 3px;
+    padding-left: 9px; 
+    gap: 10px;
+    border-left: 5px solid gold;
+    background-color: rgba(4, 28, 55, 0.5);
+  }
+  .text-highlight p{
+    color: #ffffff;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  .text-heading{
+    color: #ffffff;
+    font-family: Rubik;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
