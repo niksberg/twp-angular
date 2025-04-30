@@ -6,6 +6,18 @@
   padding: 50px 0;
   background-color: rgba(244, 244, 244, 1);
 }
+.contact-gallery
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-right: auto;
+    padding-left: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
 
 /* .g1{
   width: 312px;
