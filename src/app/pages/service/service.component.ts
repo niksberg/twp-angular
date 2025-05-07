@@ -5,6 +5,8 @@ import { ServiceBannerComponent} from '../../components/service-banner/service-b
 import {AboutWhatwedoComponent} from '../../components/about-whatwedo/about-whatwedo.component';
 import {FooterComponent} from '../../components/footer/footer.component';
 import {TestimonialComponent} from '../../components/testimonial/testimonial.component';
+import {GoodnessComponent} from '../../components/goodness/goodness.component';
+
 
 @Component({
   selector: 'app-service',
@@ -15,7 +17,8 @@ import {TestimonialComponent} from '../../components/testimonial/testimonial.com
     ServiceBannerComponent,
     AboutWhatwedoComponent,
     TestimonialComponent,
-    FooterComponent
+    FooterComponent,
+    GoodnessComponent
   ],
   templateUrl: './service.component.html',
   styleUrl: './service.component.css'
