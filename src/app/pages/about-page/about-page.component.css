@@ -37,3 +37,12 @@
   position: absolute;
   background: rgba(225, 255, 255, 0.08);
 }
+
+@media screen and (max-width: 1200px) {
+  .g1 {
+      display: none;
+  }
+  .g2 {
+      display: none;
+  }
+}
