@@ -6,7 +6,7 @@ import {AboutWhatwedoComponent} from '../../components/about-whatwedo/about-what
 import {FooterComponent} from '../../components/footer/footer.component';
 import {TestimonialComponent} from '../../components/testimonial/testimonial.component';
 import {GoodnessComponent} from '../../components/goodness/goodness.component';
-
+import {CounterComponent} from '../../components/counter/counter.component';
 
 @Component({
   selector: 'app-service',
@@ -18,7 +18,8 @@ import {GoodnessComponent} from '../../components/goodness/goodness.component';
     AboutWhatwedoComponent,
     TestimonialComponent,
     FooterComponent,
-    GoodnessComponent
+    GoodnessComponent,
+    CounterComponent
   ],
   templateUrl: './service.component.html',
   styleUrl: './service.component.css'
