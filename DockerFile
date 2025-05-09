@@ -1,0 +1,27 @@
+# Use Node.js base image
+FROM node:18-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files and install dependencies
+COPY package.json package-lock.json ./
+RUN npm install
+
+# Copy all source code
+COPY . .
+
+# Build the Angular app
+RUN npm run build --prod
+
+# Install a static file server
+RUN npm install -g http-server
+
+# Set working directory to the Angular build output
+WORKDIR /app/dist/transitflow-angularpage
+
+# Expose port for the container
+EXPOSE 8080
+
+# Serve the app
+CMD ["http-server", ".", "-p", "8080"]

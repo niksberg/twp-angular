@@ -1,27 +1,39 @@
 .about-page-main {
-  width: 100%;
+  width: 100vw;
   overflow-x: hidden;
 }
 .grey{
   padding: 50px 0;
   background-color: rgba(244, 244, 244, 1);
 }
+.contact-gallery
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-right: auto;
+    padding-left: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
-/* .g1{
+
+
+.g1{
   width: 312px;
   height: 100px;
-  top: 5163px;
+  top: 6161px;
   left: 0px;
   position: absolute;
-  background: rgba(225, 255, 255, 0.08);
+  background: rgb(225, 255, 255, 0.08);
 
 }
 
 .g2{
   width: 1181px;
   height: 100px;
-  top: 5163px;
+  top: 6161px;
   left: 700px;
   position: absolute;
   background: rgba(225, 255, 255, 0.08);
-} */
+}

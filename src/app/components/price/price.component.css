@@ -162,6 +162,7 @@
 }
 
 .price-card:hover{
+    cursor: pointer;
     background: rgba(9, 18, 66, 1);
     color: white;
     transform: scale(1.03);
@@ -169,10 +170,12 @@
 }
 
 .btn:hover{
+    cursor: pointer;
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
     background: linear-gradient(94.06deg, #FFD7A6 -1.21%, #FFDA56 58.66%, #FFB629 116.84%);
-    color: black;
+    color: rgba(9, 18, 66, 1);
+    background: white;
 }
 
 .price-card:hover .price-card-title,

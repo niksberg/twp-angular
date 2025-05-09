@@ -13,7 +13,7 @@
 }
 .faq1{
     width: 681px;
-    height: auto;
+    height: 400px;
     gap: 50px;
 }
 .text1{
@@ -84,14 +84,22 @@
     font-weight: 900;
     font-family: bold;
     font-size: 1.2rem;
+    transition: transform 0.3s ease;
 }
-.answerArrow:hover{
-    color: gold;
-    cursor: pointer;
-    transform: scale(1.1);
+
+.questionText:hover + .answerArrow{
+    transform: rotate(90deg);
+    color: rgb(255, 85, 0);
+}
+.question:hover .answerText {
+    display: block;
+    transition: display 0.3s ease;
+
 }
 
 .answerText{
+    margin-top: 20px;
+    width: 569px;
     display: none;
     font-family: Krub;
     font-weight: 500;
@@ -103,7 +111,7 @@
 .faq2{
     z-index: 2;
     padding: 40px;
-    margin-top: auto;
+    margin-top: 25px;
     margin-bottom: auto;
     width: 448px;
     height: 368px;
@@ -115,7 +123,6 @@
     padding-right: 62px;
     padding-bottom: 52px;
     padding-left: 62px;
-
 }
 
 .hl2{
@@ -157,8 +164,7 @@
 }
 .contactText:hover{
     color: gold;
-    transform: scale(1.02);
-    transition: transform 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 .contactButton{
@@ -179,8 +185,7 @@
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
-    background: linear-gradient(94.06deg, #FFDA56 -1.21%, #FFD7A6 58.66%, #FFB629 116.84%);
-    box-shadow: 0px 4px 4px rgba(233, 229, 30, 0.5);
+    background: white;
 }
 
 .faqBanner{
@@ -188,4 +193,90 @@
     position: absolute;
     top: -50px;
     left: 850px;
+}
+
+@media only screen and (max-width: 768px) {
+    #faq, .faq {
+        width: 90%;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .faq1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .text1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-heading1 {
+        font-size: 28px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .questions {
+        margin-top: 40px;
+    }
+
+    .answerText {
+        width: 100%;
+    }
+
+    .faq2 {
+        width: 100%;
+        margin-top: 50px;
+        padding: 30px;
+    }
+
+    .faqBanner {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #faq, .faq {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .text-heading1 {
+        font-size: 24px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .questionText {
+        font-size: 16px;
+    }
+
+    .answerText {
+        font-size: 14px;
+    }
+
+    .text-heading2 {
+        font-size: 18px;
+    }
+
+    .contactText {
+        font-size: 14px;
+    }
+
+    .contactButton {
+        width: 120px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .call {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
 }
