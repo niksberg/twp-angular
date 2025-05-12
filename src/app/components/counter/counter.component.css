@@ -47,7 +47,18 @@
     line-height: 100%;
     letter-spacing: 0%;
 }
-
+#ct0{
+    width: 70px;
+}
+#ct1{
+    width: 140px;
+}
+#ct2{
+    width: 140px;
+}
+#ct3{
+    width: 130px;
+}
 
 @media screen and (max-width: 1024px) {
     .counter {
