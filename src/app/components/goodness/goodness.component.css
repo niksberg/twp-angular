@@ -95,6 +95,84 @@
     font-size: 16px; 
     color: rgba(102, 108, 137, 1);
 }
+
+@media screen and (max-width: 1024px) {
+    .GoodWill {
+        padding: 50px;
+        margin: 20px 30px;
+        height: auto;
+    }
+    #gw-img{
+        max-width: 100%;
+        min-width: 100%;
+        height: auto;
+    }
+    .GoodWill-Header {
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .text-heading {
+        font-size: 30px;
+    }
+
+    .GoodWill-main {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .GoodWill {
+        padding: 30px;
+        margin: 15px;
+    }
+
+    .GoodWill-main {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .text-heading {
+        font-size: 28px;
+    }
+
+    .title-text {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .GoodWill {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .GoodWill-Header {
+        margin-bottom: 30px;
+    }
+
+    .text-heading {
+        font-size: 24px;
+    }
+
+    .GoodWill-content {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .title-text {
+        font-size: 20px;
+    }
+
+    .description-text {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 45px;
+    }
+}
 .GW-features{
     align-items: center;
     display: flex;
