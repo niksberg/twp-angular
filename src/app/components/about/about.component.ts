@@ -20,8 +20,8 @@ export class AboutComponent implements OnInit {
     if (!element) return;
 
     let currentValue = startValue;
-    const firstPhaseSteps = Math.ceil((midValue - startValue) / (3000 / 50));
-    const secondPhaseSteps = Math.ceil((endValue - midValue) / (5000 / 50));
+    const firstPhaseSteps = Math.ceil((midValue - startValue) / (10000 / 50));
+    const secondPhaseSteps = Math.ceil((endValue - midValue) / (10000 / 50));
     
     // First phase animation (0 to midValue in 5 seconds)
     const firstPhase = setInterval(() => {
