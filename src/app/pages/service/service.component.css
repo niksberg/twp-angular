@@ -1,3 +1,8 @@
+.grey{
+  padding: 50px 0;
+  background-color: rgba(244, 244, 244, 1);
+}
+
 .g1{
     width: 312px;
     height: 100px;
