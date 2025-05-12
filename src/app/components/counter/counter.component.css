@@ -47,3 +47,59 @@
     line-height: 100%;
     letter-spacing: 0%;
 }
+
+
+@media screen and (max-width: 1024px) {
+    .counter {
+        padding: 0 5px;
+    }
+    .content {
+        padding: 30px;
+    }
+    .count {
+        font-size: 40px;
+    }
+    .text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .counter {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .content {
+        padding: 20px;
+        border-right: none;
+        border-bottom: 1px solid grey;
+        width: calc(50% - 20px);
+    }
+    .content:nth-last-child(-n+2) {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .counter {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .content {
+        width: 100%;
+        padding: 15px;
+        border-bottom: 1px solid grey;
+    }
+    .content:last-child {
+        border-bottom: none;
+    }
+    .count {
+        font-size: 35px;
+    }
+    .text {
+        font-size: 16px;
+        width: 120px;
+    }
+}
