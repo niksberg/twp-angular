@@ -1,5 +1,116 @@
-#ctr{
-    width: 100%;
-    min-width: 100%;
-    
+:root{
+    --bcolor: linear-gradient(90deg, rgba(213, 213, 213, 0) 0%, #D5D5D5 51.04%, rgba(213, 213, 213, 0) 100%)
+}
+
+.counter{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+    margin: 30px auto;
+    border-top: 1px solid grey;
+}
+
+.content{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-right: 1px solid grey;
+}
+.content:last-child{
+    border-right: none;
+}
+.count{
+    font-family: Rubik;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+}
+
+.box{
+    width: 17px;
+    height: 17px;
+    background: linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
+}
+
+.text{
+    width: 157px;
+    font-family: League Spartan;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+#ct0{
+    width: 70px;
+}
+#ct1{
+    width: 140px;
+}
+#ct2{
+    width: 140px;
+}
+#ct3{
+    width: 130px;
+}
+
+@media screen and (max-width: 1024px) {
+    .counter {
+        padding: 0 5px;
+    }
+    .content {
+        padding: 30px;
+    }
+    .count {
+        font-size: 40px;
+    }
+    .text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .counter {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .content {
+        padding: 20px;
+        border-right: none;
+        border-bottom: 1px solid grey;
+        width: calc(50% - 20px);
+    }
+    .content:nth-last-child(-n+2) {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .counter {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .content {
+        width: 100%;
+        padding: 15px;
+        border-bottom: 1px solid grey;
+    }
+    .content:last-child {
+        border-bottom: none;
+    }
+    .count {
+        font-size: 35px;
+    }
+    .text {
+        font-size: 16px;
+        width: 120px;
+    }
 }
