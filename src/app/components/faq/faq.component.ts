@@ -4,10 +4,16 @@ import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
   selector: 'app-faq',
   imports: [],
   templateUrl: './faq.component.html',
-  styleUrl: './faq.component.css'
+  styleUrl: './faq.component.css',
+  standalone: true
 })
 export class FaqComponent implements AfterViewInit {
   @ViewChild('faqBanner') faqBanner!: ElementRef;
+  activeQuestionIndex: number | null = null;
+
+  toggleAnswer(index: number) {
+    this.activeQuestionIndex = this.activeQuestionIndex === index ? null : index;
+  }
 
   ngAfterViewInit() {
     const observer = new IntersectionObserver((entries) => {
