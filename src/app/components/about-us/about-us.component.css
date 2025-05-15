@@ -94,9 +94,16 @@
     letter-spacing: 0%;
 }
 .btn:hover{
-    background-color: gold;
+    background-color: whitesmoke;
     cursor: pointer;
-    box-shadow: 0px 10px 20px rgba(234, 224, 43, 0.5);
+    /* box-shadow: 5px 10px 20px rgba(217, 153, 14, 0.5); */
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.btn.active {
+    background-color: rgb(255, 136, 0);
+    cursor: pointer;
+    /* box-shadow: 0px 10px 20px rgba(234, 224, 43, 0.5); */
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
@@ -104,7 +111,16 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
+.td3{
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.td4{
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .aboutUS-learnmore{
     position: relative;
     margin-top: 60px;
