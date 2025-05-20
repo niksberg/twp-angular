@@ -131,14 +131,15 @@
 
 .footer-bottom {
     max-width: 1200px;
-    margin: 40px auto 0;
+    margin: 40px auto;
     padding: 20px;
     border-top: 1px solid #1F2A69;
     text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
 }
 .terms
 {
@@ -267,5 +268,8 @@
     .subscribe-form {
         max-width: 300px;
         margin: 0 auto;
+    }
+    .copyright {
+        margin-top: 10px;
     }
 }

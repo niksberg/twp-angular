@@ -166,13 +166,23 @@
 @media screen and (max-width: 1023px) and (min-width: 769px) {
     .about-banner {
         flex-direction: column;
-        text-align: center;
+        text-align: flex-start;
     }
-
+    .about-text{
+        justify-content: start;
+    }
     .bottom-text {
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start !important;
     }
-
+    .feature{
+        justify-content: flex-start;
+    }
+    .text-heading{
+        margin-bottom: 5px;
+    }
     .about-counter {
         flex-wrap: wrap;
     }
@@ -181,12 +191,17 @@
 @media screen and (max-width: 768px) {
     .about-banner {
         flex-direction: column;
-        text-align: center;
+        text-align: start;
+    }
+
+    .text-heading{
+        margin-bottom: 5px;
     }
 
     .bottom-text {
         flex-direction: column;
-        align-items: center;
+        justify-content: flex-start !important;
+        align-items: start;
     }
 
     .text-heading {
@@ -196,6 +211,9 @@
     .about-counter {
         flex-direction: column;
         align-items: center;
+    }
+    .feature{
+        justify-content: flex-start;
     }
 
     .counter {
