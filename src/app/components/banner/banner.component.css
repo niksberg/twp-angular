@@ -68,6 +68,15 @@
         padding: 0 20px;
         top: 290px;
     }
+    #hero-image{
+        width: auto;
+        height: 700px;
+        object-fit: cover;
+        position: static;
+        right: auto;
+        left: auto;
+        overflow-x: hidden;
+    }
 
     .text-highlight {
         color: #ffffff;
