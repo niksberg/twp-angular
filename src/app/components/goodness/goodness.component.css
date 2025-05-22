@@ -1,15 +1,14 @@
 .GoodWill{
-    padding: 75px 100px ;
+    padding: 750px 100px ;
     display: flex;
     flex-direction: column;
     max-width: 1600px;
-    margin: 30px 50px;
+    margin: 10px 50px;
     height: 835px;
-    padding-top: 103px;
+    padding-top: 40px;
     padding-right: auto;
-    padding-bottom: 103px;
+    padding-bottom: 40px;
     padding-left: auto;
-
 }
 
 .GoodWill-Header{

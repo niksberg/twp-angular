@@ -161,7 +161,7 @@
     border: none;
 }
 
-.price-card:hover{
+.price-card:hover, .price-card.selected {
     cursor: pointer;
     background: rgba(9, 18, 66, 1);
     color: white;
@@ -181,7 +181,11 @@
 .price-card:hover .price-card-title,
 .price-card:hover .price-card-price,
 .price-card:hover .price-card-duration,
-.price-card:hover .feature
+.price-card:hover .feature,
+.price-card.selected .price-card-title,
+.price-card.selected .price-card-price,
+.price-card.selected .price-card-duration,
+.price-card.selected .feature
 {
     color: white; 
 }

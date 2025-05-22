@@ -10,11 +10,13 @@
             <p class="text-heading">Our Company Overview</p>
             <p class="text-description td1">Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition.</p>
             <div class="aboutUS-btn">
-                <button class="btn btn-primary1">Our Approach</button>
-                <button class="btn btn-primary2">Their Method</button>
-                <button class="btn btn-primary3">You Process</button>
+                <button class="btn btn-primary1" [class.active]="activeButton === 'approach'" (click)="showApproach('approach')">Our Approach</button>
+                <button class="btn btn-primary2" [class.active]="activeButton === 'method'" (click)="showApproach('method')">Their Method</button>
+                <button class="btn btn-primary3" [class.active]="activeButton === 'process'" (click)="showApproach('process')">You Process</button>
             </div>
-            <p class="text-description td2">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem quia voluptassit.</p>
+            <p class="text-description td2" [style.display]="activeDescription === 'td2' ? 'block' : 'none'">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem quia voluptassit.</p>
+            <p class="text-description td3" [style.display]="activeDescription === 'td3' ? 'block' : 'none'">Nemo enim ipsam voluptatem quia voluptassit. Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+            <p class="text-description td4" [style.display]="activeDescription === 'td4' ? 'block' : 'none'">Quald ur peeprt sarspiciatis, unde omnils iste natus error sit vokluptatem accusantium dolgoremque laum rem aperiam feaque ipsa, quae ab villo invent rure veritatis et quasim architecto vmfdnr dicta sunt, explicabo. Semo enim ipsam voluptatem quia voluptassit.</p>
             <button class="aboutUS-learnmore btn">Learn More</button>
             <div class="graphic-c"></div>
         </div>

@@ -6,19 +6,33 @@
 .g1{
     width: 312px;
     height: 100px;
-    top: 3309.5px;
+    top: 3241px;
     left: 0px;
     position: absolute;
     background: rgba(225, 255, 255, 0.08);
-  
   }
   
   .g2{
     width: 1181px;
     height: 100px;
-    top: 3309.5px;
+    top: 3241px;
     left: 700px;
     position: absolute;
     background: rgba(225, 255, 255, 0.08);
   }
+  
+  @media screen and (max-width: 1200px) {
+    .g1, .g2 {
+        display: none;
+    }
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .grey {
+        padding: 30px 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
   

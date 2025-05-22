@@ -3,7 +3,7 @@
     background: linear-gradient(to right, #091242 50%, #f4f4f4 50%);
     align-items: center;
     justify-content: center;
-    margin: 100px 0;
+    margin: 50px 0;
     padding: 100px 5px;
 }
 
@@ -245,7 +245,7 @@
         max-width: 30%;
         left: 50%;
         transform: translateX(-50%);
-        top: 370px;
+        top: 250px;
         z-index: 1;
     }
 
