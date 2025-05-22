@@ -7,41 +7,41 @@
         </div>
         <div class="questions">
             <div class="question">
-                <div class="questionAsked">
+                <div class="questionAsked" (click)="toggleAnswer(0)">
                     <p class="questionText qt1">How can I pay for your logistics services?</p>
-                    <p class="answerArrow">></p>
+                    <p class="answerArrow" [style.transform]="activeQuestionIndex === 0 ? 'rotate(90deg)' : 'none'">></p>
                 </div>
-                <p class="answerText at1">
+                <p class="answerText at1" [style.display]="activeQuestionIndex === 0 ? 'block' : 'none'">
                     Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.
                 </p>
             </div>
 
             <div class="question">
-                <div class="questionAsked">
+                <div class="questionAsked" (click)="toggleAnswer(1)">
                     <p class="questionText qt2">What payment methods are supported?</p>
-                    <p class="answerArrow">></p>
+                    <p class="answerArrow" [style.transform]="activeQuestionIndex === 1 ? 'rotate(90deg)' : 'none'">></p>
                 </div>
-                <p class="answerText at2">
+                <p class="answerText at2" [style.display]="activeQuestionIndex === 1 ? 'block' : 'none'">
                     Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.
                 </p>
             </div>
 
             <div class="question">
-                <div class="questionAsked">
+                <div class="questionAsked" (click)="toggleAnswer(2)">
                     <p class="questionText qt3">What options for logistics plans are available?</p>
-                    <p class="answerArrow">></p>
+                    <p class="answerArrow" [style.transform]="activeQuestionIndex === 2 ? 'rotate(90deg)' : 'none'">></p>
                 </div>
-                <p class="answerText at3">
+                <p class="answerText at3" [style.display]="activeQuestionIndex === 2 ? 'block' : 'none'">
                     Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.
                 </p>
             </div>
 
             <div class="question">
-                <div class="questionAsked">
+                <div class="questionAsked" (click)="toggleAnswer(3)">
                     <p class="questionText qt4">Can i specify a delivery date when ordering?</p>
-                    <p class="answerArrow">></p>
+                    <p class="answerArrow" [style.transform]="activeQuestionIndex === 3 ? 'rotate(90deg)' : 'none'">></p>
                 </div>
-                <p class="answerText at4">
+                <p class="answerText at4" [style.display]="activeQuestionIndex === 3 ? 'block' : 'none'">
                     Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive.
                 </p>
             </div>

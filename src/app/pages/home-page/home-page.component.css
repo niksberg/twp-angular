@@ -1,5 +1,6 @@
 .home-page-main {
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
   overflow-x: hidden;
 }
 
@@ -12,7 +13,7 @@
 .g1{
   width: 312px;
   height: 100px;
-  top: 8532.5px;
+  top: 8499px;
   left: 0px;
   position: absolute;
   background: rgba(225, 255, 255, 0.08);
@@ -22,7 +23,7 @@
 .g2{
   width: 1181px;
   height: 100px;
-  top: 8532.5px;
+  top: 8499px;
   left: 700px;
   position: absolute;
   background: rgba(225, 255, 255, 0.08);

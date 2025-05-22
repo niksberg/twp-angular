@@ -5,7 +5,7 @@
         <p class="text-heading">Our Best Price</p>
     </div>
     <div class="price-container">
-        <div class="price-card">
+        <div class="price-card" [class.selected]="selectedPlan === 'Basic'">
             <div class="price-card-header">
                 <p class="price-card-title">Basic</p>
                 <div class="price-tag">
@@ -20,11 +20,11 @@
                 <p class="feature">Real-time rate shopping</p>
             </div>
             <div class="price-card-cta">
-                <button class="btn btn-primary">Choose Plan</button>
+                <button class="btn btn-primary" (click)="selectPlan('Basic', $event)">{{ selectedPlan === 'Basic' ? 'Selected' : 'Choose Plan' }}</button>
             </div>
         </div>
 
-        <div class="price-card">
+        <div class="price-card" [class.selected]="selectedPlan === 'Standard'">
             <div class="price-card-header">
                 <p class="price-card-title">Standard</p>
                 <div class="price-tag">
@@ -39,11 +39,11 @@
                 <p class="feature">Real-time rate shopping</p>
             </div>
             <div class="price-card-cta">
-                <button class="btn btn-primary">Choose Plan</button>
+                <button class="btn btn-primary" (click)="selectPlan('Standard', $event)">{{ selectedPlan === 'Standard' ? 'Selected' : 'Choose Plan' }}</button>
             </div>
         </div>
 
-        <div class="price-card">
+        <div class="price-card" [class.selected]="selectedPlan === 'Premium'">
             <div class="price-card-header">
                 <p class="price-card-title">Premium</p>
                 <div class="price-tag">
@@ -58,7 +58,7 @@
                 <p class="feature">Real-time rate shopping</p>
             </div>
             <div class="price-card-cta">
-                <button class="btn btn-primary">Choose Plan</button>
+                <button class="btn btn-primary" (click)="selectPlan('Premium', $event)">{{ selectedPlan === 'Premium' ? 'Selected' : 'Choose Plan' }}</button>
             </div>
         </div>
     </div>
