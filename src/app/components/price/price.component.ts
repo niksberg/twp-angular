@@ -13,13 +13,16 @@ export class PriceComponent {
   selectedPlan: string | null = null;
 
   selectPlan(planTitle: string, event: MouseEvent) {
-    this.selectedPlan = planTitle;
+    // Toggle selection: if clicking the same plan, unselect it
+    this.selectedPlan = this.selectedPlan === planTitle ? null : planTitle;
     
-    const rect = (event.target as HTMLElement).getBoundingClientRect();
-    const x = rect.left + rect.width / 2;
-    const y = rect.top + rect.height / 2;
-    
-    confetti({
+    // Only show confetti when selecting a plan, not when unselecting
+    if (this.selectedPlan) {
+      const rect = (event.target as HTMLElement).getBoundingClientRect();
+      const x = rect.left + rect.width / 2;
+      const y = rect.top + rect.height / 2;
+      
+      confetti({
       particleCount: 150,
       spread: 90,
       startVelocity: 20,
@@ -30,5 +33,6 @@ export class PriceComponent {
       colors: ['#FFB629', '#FF902A', '#2A4E6E', '#091242'],
       ticks: 100
     });
+  }
   }
 }
