@@ -29,7 +29,8 @@
   {
     .aboutBanner-text
     {
-       left: 30px; 
+       left: 20px;
+       top: 175px; 
     }
   }
   @media screen and (max-width: 1500px)

@@ -9,6 +9,11 @@
     padding: 50px 20px;
     margin: 5px auto;
 }
+@media screen and (max-width: 768px) {
+    #team{
+        margin-bottom: 10px;
+    }
+}
 
 .text-highlight{
     background-color: rgba(232, 232, 232, 0.5);

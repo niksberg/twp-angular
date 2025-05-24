@@ -31,6 +31,7 @@
     .serviceBanner-text
     {
        left: 50px; 
+       top: 160px;
     }
   }
   @media screen and (max-width: 1500px)
