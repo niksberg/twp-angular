@@ -13,6 +13,13 @@
     width:1200px;
     height: auto;
 }
+
+@media screen and (max-width: 768px)  {
+    #faq,.faq {
+        padding-top: 20px;
+    }
+    
+}
 .faq1{
     width: 681px;
     height: 400px;
@@ -201,8 +208,9 @@
     #faq, .faq {
         width: 90%;
         flex-direction: column;
-        margin-top: 50px;
-        margin-bottom: 50px;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .faq1 {
@@ -230,9 +238,14 @@
     }
 
     .faq2 {
+        align-items: center;
         width: 100%;
         margin-top: 50px;
-        padding: 30px;
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        height: auto;
     }
 
     .faqBanner {
