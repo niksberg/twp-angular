@@ -30,10 +30,16 @@
   {
     .serviceBanner-text
     {
-       left: 50px; 
        top: 160px;
     }
-  }
+    @media screen and (max-width: 768px) {
+        .text-highlight {
+            justify-content: flex-start !important;
+            text-align: left;
+            margin-left: 0;
+        }
+    }
+}
   @media screen and (max-width: 1500px)
    {
     .serviceBanner-text
@@ -44,7 +50,7 @@
   
   .text-highlight{
     align-items: center;
-    justify-content: centers;
+    justify-content: center;
     width: 90px;
     height: 23px;
     left: 4px;

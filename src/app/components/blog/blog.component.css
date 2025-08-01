@@ -266,6 +266,42 @@
 }
 
 @media screen and (max-width: 768px) {
+
+        .text{
+            top: 0;
+            margin-left: 0;
+            margin-right: auto;
+            justify-content: start;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .text-highlight{
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            font-family: Rubik;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            justify-content: left;
+            text-align: left;
+            background-color:rgba(232, 232, 232, 0.5);
+            padding: 2px 5px;
+            border-left: 4px solid gold;
+        }
+        .text-heading{
+            font-family: Rubik;
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+
     .blog-div {
         padding: 0 10px;
     }
